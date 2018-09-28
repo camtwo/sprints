@@ -1,0 +1,11 @@
+
+
+each tarefa in tarefas
+	p
+	| * [OK] [##{tarefa.numero}] 
+	| #{tarefa.titulo}
+	if tarefa.subtarefas
+		each subtarefa in tarefa.subtarefas
+			p
+			| > * [OK] [##{subtarefa.numero}] 
+			| #{subtarefa.titulo}

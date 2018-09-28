@@ -1,0 +1,15 @@
+mixin tarefa(tarefa)
+	ul
+		li.task-list-item
+			input.task-list-item-checkbox.form-checkbox(type='checkbox')
+			
+			- var link = 'http://redmine.camtwo.com.br/issues/'+tarefa.numero;
+
+			a(href=link) #{tarefa.numero}
+			|	#{tarefa.titulo}
+		each subtarefa in tarefa.subtarefas
+			blockquote
+				p
+					- var link = 'http://redmine.camtwo.com.br/issues/#{subtarefa.numero}'
+					a(href=link) #{subtarefa.numero}
+					|	#{subtarefa.titulo}

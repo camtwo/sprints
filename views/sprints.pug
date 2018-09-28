@@ -1,0 +1,31 @@
+extends layout
+
+
+include mixins
+
+block content
+	
+	include menu_sprints
+
+	.stackedit__right
+		.stackedit__html
+			h1(id='reunião-de-revisão-sprint-80') Reunião de revisão Sprint #{sprint_number}
+			h2#meta Meta
+			blockquote
+				p
+					| #{meta}
+
+
+			h2#tarefas Tarefas
+			
+			each tarefa in tarefas
+				+tarefa(tarefa)
+
+			div(id='atualização', style='display: none')
+				h2(id='previsão-de-atualização') Previsão de atualização
+				blockquote
+					p #{data_atualizacao}
+				img(src='https://media1.tenor.com/images/b2f380865b3b97c559905ea20f9addbc/tenor.gif', width='400', heigth='400')
+
+block js
+		script(type='text/javascript' src="/javascripts/easter-egg.js")
