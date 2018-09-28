@@ -13,7 +13,7 @@ body {
       text-rendering: auto;
       color: rgba(0, 0, 0, .75);
       font-size: 20px;
-
+      font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
       -webkit-font-variant-ligatures: common-ligatures;
       font-variant-ligatures: common-ligatures;
       line-height: 1.67;
@@ -309,7 +309,7 @@ pre code {
 }
 
 .task-list-item {
-      list-style-type: none;
+      list-style-type: disc;
 }
 
 .task-list-item-checkbox {
@@ -320,4 +320,40 @@ pre code {
 
 a:hover {
       cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      margin: 10px !important;
+      font-size: 20px
+}
+
+h1{
+      text-align: center;
+}
+
+blockquote, dl, ol, p, pre, ul {
+      margin: 15px !important;
+      font-size: 15px
+}
+
+li {
+      font-size: 11px;
+}
+
+ul {
+      margin: 5px !important;
+}
+
+input {
+      display: none !important;
+}
+
+#atualizacao{
+      display: none;
+      visibility: none;
+      height: 0px;
+}
+
+.stackedit__html {
+      margin-bottom: 0px!important;
 }
