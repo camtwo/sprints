@@ -1,12 +1,12 @@
 
 let umaVez = false;
 const todoCheckados = ()=>{
-	const todosOsInputs = Array.from(document.getElementsByTagName("input"));
+	const todosOsInputs = Array.from(document.getElementsByClassName("itemTarefa"));
 	const inputsCheckados = todosOsInputs.filter((e)=>{return e.checked});
 	return todosOsInputs.length == inputsCheckados.length;
 }
 
-Array.from(document.getElementsByTagName("input")).forEach((e)=>{
+Array.from(document.getElementsByClassName("itemTarefa")).forEach((e)=>{
 	e.onclick = (ev) =>{
 		if (todoCheckados()) {
 			document.getElementById('atualização').style.display = 'block';
