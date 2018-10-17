@@ -1,22 +1,25 @@
 
-setInterval(function() {
-	let inputs = document.getElementsByTagName('input');
-	let checks = 0;
-	for (var i = 0; i < inputs.length; i++) {
-		let _input = inputs[i];
-		if (_input.type.toLowerCase() == 'checkbox' && _input.checked) {
-			checks++;
-		}
-		if (inputs.length == checks) {
+let umaVez = false;
+const todoCheckados = ()=>{
+	const todosOsInputs = Array.from(document.getElementsByTagName("input"));
+	const inputsCheckados = todosOsInputs.filter((e)=>{return e.checked});
+	return todosOsInputs.length == inputsCheckados.length;
+}
+
+Array.from(document.getElementsByTagName("input")).forEach((e)=>{
+	e.onclick = (ev) =>{
+		if (todoCheckados()) {
 			document.getElementById('atualização').style.display = 'block';
-			try {
+			if (!umaVez) {
 				window.scrollTo({
 					top: 10000,
 					behavior: "smooth"
 				});
-			} catch (e) {}
-		} else {
+			}
+			umaVez = true;
+		}else{
 			document.getElementById('atualização').style.display = 'none';
+			umaVez = false;
 		}
 	}
-}, 2000);
+});
