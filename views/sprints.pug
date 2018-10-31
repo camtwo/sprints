@@ -16,8 +16,8 @@ block content
 					| #{meta}
 
 			h2#tarefas Tarefas
-				small
-					| (#{tarefas.length} tarefas)
+				small(style="font-size: 13px;")
+					| &nbsp;(#{tarefas.length} tarefas)
 			
 			each tarefa in tarefas
 				+tarefa(tarefa)
