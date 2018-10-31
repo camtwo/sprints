@@ -15,8 +15,9 @@ block content
 				p
 					| #{meta}
 
-
 			h2#tarefas Tarefas
+				small
+					| (#{tarefas.length} tarefas)
 			
 			each tarefa in tarefas
 				+tarefa(tarefa)

@@ -53,7 +53,28 @@ sprint_82.tarefas.push(newTarefa(8437, "Ignorar a opção Bloquear atendimento s
 sprint_82.tarefas.push(newTarefa(7897, "Remover indicador de iss retido no emissor", []));
 
 
-const SPRINTS = [sprint_81, sprint_82];
+const sprint_83 = { 
+		title: 'Sprint 83',
+		sprint_number: "83",
+		meta: "Possibilitar que os clientes consigam emitir notas de devolução e também visualizar todas as informações sobre um agendamento",
+		data_atualizacao: "04/11/2018 a partir das 22:00",
+		easter_egg: "https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif",
+		tarefas: []
+}
+
+sprint_83.tarefas.push(newTarefa(8378, "Criar tela de mais detalhes agendamento", []));
+sprint_83.tarefas.push(newTarefa(8474, "Possibilitar geração de nota de devolução de produtos", []));
+sprint_83.tarefas.push(newTarefa(8470, "Criar comissão por indicação no orçamento", []));
+sprint_83.tarefas.push(newTarefa(6857, "Possibilitar impressão da agenda em impressora térmica", []));
+sprint_83.tarefas.push(newTarefa(7365, "Criar a opção de guia de encaminhamento (orçamento)", []));
+sprint_83.tarefas.push(newTarefa(8494, "Ao editar um paciente existente, a opção de 'Continuar', na integração com pipedrive, está integrando com uma pessoa, mesmo sem estar marcada alguma pessoa para integração", []));
+sprint_83.tarefas.push(newTarefa(8475, "Integração de volta Pipedrive para o CNN", []));
+sprint_83.tarefas.push(newTarefa(8441, "Problemas no campo de busca 'Responsável pelo orçamento'", []));
+sprint_83.tarefas.push(newTarefa(8497, "Criar uma nova macro nos modelos de documento", []));
+sprint_83.tarefas.push(newTarefa(8255, "Ao faturar um agendamento quando clica na opção de voltar a lista se perde todos os valores dos filtros", []));
+sprint_83.tarefas.push(newTarefa(8512, "Alterar clone() da interface Replicavel para copy(), e remover clone da agenda e faturamento", []));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
