@@ -1,10 +1,11 @@
 
-function newTarefa(numero, titulo, subtarefas){
+function newTarefa(numero, titulo, subtarefas, disabled){
 	return {
 		"numero": numero,
 		"titulo": titulo,
 		"subtarefas": subtarefas || [],
-		"isPai": (subtarefas || []).length > 0
+		"isPai": (subtarefas || []).length > 0,
+		"disabled" : disabled || false
 	}
 }
 
@@ -74,7 +75,34 @@ sprint_83.tarefas.push(newTarefa(8497, "Criar uma nova macro nos modelos de docu
 sprint_83.tarefas.push(newTarefa(8255, "Ao faturar um agendamento quando clica na opção de voltar a lista se perde todos os valores dos filtros", []));
 sprint_83.tarefas.push(newTarefa(8512, "Alterar clone() da interface Replicavel para copy(), e remover clone da agenda e faturamento", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83];
+const sprint_84 = {
+		title: 'Sprint 84',
+		sprint_number: "84",
+		meta: "Permitir que o cliente imprima novos relatórios do orçamento e possibilitar realização de prescrições pela Memed.",
+		data_atualizacao: "25/11/2018 a partir das 22:00",
+		easter_egg: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
+		tarefas: []
+}
+
+	const tf1 = newTarefa(8548, "Consumir endpoint para cadastrar e atualizar pacientes no Lapius.", [], true);
+	const tf2 = newTarefa(8549, "Consumir endpoint para cadastrar e atualizar dados do prontuário do paciente no Lapius.", [], true);
+	sprint_84.tarefas.push(newTarefa(8547, "[Tarefa pai] Criar integração com app da Lapius", [tf1, tf2], true));
+
+	sprint_84.tarefas.push(newTarefa(8499, "Alterar forma de integração das prescrições com o memed", []));
+	sprint_84.tarefas.push(newTarefa(8472, "Possibilitar leitura de xml de nota e inserir no estoque os produtos da nota", []));
+
+	sprint_84.tarefas.push(newTarefa(8545, "Cadastrar data de início e fim de tratamento odontológico no orçamento", []));
+	sprint_84.tarefas.push(newTarefa(8502, "Relatório de quais pacientes que aprovaram orçamento e não realizaram nenhum agendamento", []));
+	sprint_84.tarefas.push(newTarefa(8503, "Relatório de quais pacientes não vieram para a manutenção do mês", []));
+	sprint_84.tarefas.push(newTarefa(8504, "Relatório de quais pacientes não fizeram a instalação", []));
+	sprint_84.tarefas.push(newTarefa(8622, "Relatório de SMS enviados", [])); // extra
+	sprint_84.tarefas.push(newTarefa(8584, "Melhoria componente modal.js", []));
+	sprint_84.tarefas.push(newTarefa(8533, "Poder cadastrar o paciente na hora de criar um novo orçamento", []));
+	sprint_84.tarefas.push(newTarefa(8469, "Mostrar a informação de quanto espaço em disco o cliente esta consumindo", []));
+	
+	sprint_84.tarefas.push(newTarefa(8615, "Adicionar campo de chave de API nas perguntas adicionais de paciente e anamnese e nas suas alternativas", [])); // extra
+	
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
