@@ -1,11 +1,12 @@
 
-function newTarefa(numero, titulo, subtarefas, disabled){
+function newTarefa(numero, titulo, subtarefas, disabled, checked){
 	return {
 		"numero": numero,
 		"titulo": titulo,
 		"subtarefas": subtarefas || [],
 		"isPai": (subtarefas || []).length > 0,
-		"disabled" : disabled || false
+		"disabled" : disabled || false,
+		"checked" : checked || false
 	}
 }
 
@@ -84,9 +85,9 @@ const sprint_84 = {
 		tarefas: []
 }
 
-	const tf1 = newTarefa(8548, "Consumir endpoint para cadastrar e atualizar pacientes no Lapius.", [], true);
-	const tf2 = newTarefa(8549, "Consumir endpoint para cadastrar e atualizar dados do prontuário do paciente no Lapius.", [], true);
-	sprint_84.tarefas.push(newTarefa(8547, "[Tarefa pai] Criar integração com app da Lapius", [tf1, tf2], true));
+	const tf1 = newTarefa(8548, "Consumir endpoint para cadastrar e atualizar pacientes no Lapius.", [], true, true);
+	const tf2 = newTarefa(8549, "Consumir endpoint para cadastrar e atualizar dados do prontuário do paciente no Lapius.", [], true, true);
+	sprint_84.tarefas.push(newTarefa(8547, "[Tarefa pai] Criar integração com app da Lapius", [tf1, tf2], true, true));
 
 	sprint_84.tarefas.push(newTarefa(8499, "Alterar forma de integração das prescrições com o memed", []));
 	sprint_84.tarefas.push(newTarefa(8472, "Possibilitar leitura de xml de nota e inserir no estoque os produtos da nota", []));
@@ -101,7 +102,7 @@ const sprint_84 = {
 	sprint_84.tarefas.push(newTarefa(8469, "Mostrar a informação de quanto espaço em disco o cliente esta consumindo", []));
 	
 	sprint_84.tarefas.push(newTarefa(8615, "Adicionar campo de chave de API nas perguntas adicionais de paciente e anamnese e nas suas alternativas", [])); // extra
-	
+
 const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84];
 
 module.exports = {

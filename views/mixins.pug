@@ -1,7 +1,7 @@
 mixin tarefa(tarefa)
 	ul
 		li.task-list-item
-			input.task-list-item-checkbox.itemTarefa.form-checkbox(type='checkbox', disabled=tarefa.disabled, checked=tarefa.disabled)
+			input.task-list-item-checkbox.itemTarefa.form-checkbox(type='checkbox', disabled=tarefa.disabled, checked=tarefa.checked)
 			
 			- var link = 'http://redmine.camtwo.com.br/issues/'+tarefa.numero;
 
