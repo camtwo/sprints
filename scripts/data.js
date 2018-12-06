@@ -103,7 +103,33 @@ const sprint_84 = {
 	
 	sprint_84.tarefas.push(newTarefa(8615, "Adicionar campo de chave de API nas perguntas adicionais de paciente e anamnese e nas suas alternativas", [])); // extra
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84];
+
+const sprint_85 = {
+		title: 'Sprint 85',
+		sprint_number: "85",
+		meta: "Possibilitar a inativação do paciente e melhorar a geração do fluxo de caixa.",
+		data_atualizacao: "09/12/2018 a partir das 22:00",
+		easter_egg: "https://media.giphy.com/media/13j918ylcwctG/giphy.gif",
+		tarefas: []
+}
+
+	sprint_85.tarefas.push(newTarefa(8616, "[Lapius] Consumir os dados de Sinais vitais do paciente", []));
+	sprint_85.tarefas.push(newTarefa(8618, "Possibilitar inativação de pacientes", []));
+	sprint_85.tarefas.push(newTarefa(8625, "Otimizar rotina de fluxo de caixa", []));
+	sprint_85.tarefas.push(newTarefa(8581, "Implementar novas versões de TISS", []));
+	sprint_85.tarefas.push(newTarefa(8519, "Remover max height dos conteúdos da tela da agenda", []));
+	sprint_85.tarefas.push(newTarefa(6807, "Melhorar forma de retorno à lista quando da edição de procedimentos", []));
+	sprint_85.tarefas.push(newTarefa(8621, "Profissional de saúde inativo na clinica ainda consegue gerar prescrições.", []));
+	sprint_85.tarefas.push(newTarefa(8510, "Popular o campo 'Profissional' ao faturar comissões", []));
+	sprint_85.tarefas.push(newTarefa(8460, "Ao renegociar uma conta, não esta sendo possível gerar e imprimir todos os boletos de uma só vez.", []));
+	sprint_85.tarefas.push(newTarefa(8605, "Não está mostrando a disponibilidade dos exames quando o mesmo não possui localAgenda", []));
+	sprint_85.tarefas.push(newTarefa(8224, "Nas guias TISS, permitir pesquisar por código do CBO sem o ponto", []));
+	sprint_85.tarefas.push(newTarefa(8617, "Criar opção de carregar automaticamente ou não a disponibilidade", []));
+	sprint_85.tarefas.push(newTarefa(8569, "Alertar que a pessoa tem caixa aberto há muito tempo", []));
+	sprint_85.tarefas.push(newTarefa(8455, "Criar menu para agrupar guias do Tiss, deixando as mesmas em submenus", []));
+
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
