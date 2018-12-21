@@ -133,7 +133,7 @@ const sprint_86 = {
 		sprint_number: "86",
 		meta: "Possibilitar gerar comissão para não profissionais.",
 		data_atualizacao: "...",
-		easter_egg: "https://media.giphy.com/media/3oriO7A7bt1wsEP4cw/giphy.gif",
+		easter_egg: "/static/images/andre.png",
 		tarefas: []
 }
 
