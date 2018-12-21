@@ -128,8 +128,36 @@ const sprint_85 = {
 	sprint_85.tarefas.push(newTarefa(8569, "Alertar que a pessoa tem caixa aberto há muito tempo", []));
 	sprint_85.tarefas.push(newTarefa(8455, "Criar menu para agrupar guias do Tiss, deixando as mesmas em submenus", []));
 
+const sprint_86 = {
+		title: 'Sprint 86',
+		sprint_number: "86",
+		meta: "Possibilitar gerar comissão para não profissionais.",
+		data_atualizacao: "...",
+		easter_egg: "https://media.giphy.com/media/13j918ylcwctG/giphy.gif",
+		tarefas: []
+}
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85];
+sprint_86.tarefas.push(newTarefa(8668, "(Fechada) - Colocar totalizador no relatório de dados por convênio", []));
+sprint_86.tarefas.push(newTarefa(8685, "(Fechada) - Bug no menu lateral da agenda", []));
+sprint_86.tarefas.push(newTarefa(8686, "(Fechada) - Bug no rodapé da agenda ao visualizar por mês", []));
+sprint_86.tarefas.push(newTarefa(7065, "(Fechada) - Mensagem ao faturar agenda com convênio sem clienteFornecedor", []));
+sprint_86.tarefas.push(newTarefa(8659, "(Fechada) - Integrar orçamento aprovado ao RDStation", []));
+sprint_86.tarefas.push(newTarefa(8661, "(Fechada) - Otimizar carregamento da lista de pacientes", []));
+sprint_86.tarefas.push(newTarefa(8662, "(Fechada) - Otimizar carregamento da lista de pacientes incompletos", []));
+
+const tarefasFilhas = [];
+tarefasFilhas.push(newTarefa(8645, "Permitir copiar configuracoes de comissao de outra pessoa", [], true, true));
+tarefasFilhas.push(newTarefa(8642, "Permitir adicionar procedimentos na regra da pessoa", [], true, true));
+tarefasFilhas.push(newTarefa(8644, "Modificar lógica de reajuste dos valores de comissao", [], true, true));
+tarefasFilhas.push(newTarefa(8639, "Alterar a busca de valores de comissão para pegar valores da cfg geral", [], true, true));
+tarefasFilhas.push(newTarefa(8637, "Migrar campos relacionados à comissão de profissional para pessoa", [], true, true));
+tarefasFilhas.push(newTarefa(8641, "Permitir listar e adicionar pessoas nas regras individuais de comissão", [], true, true));
+tarefasFilhas.push(newTarefa(8638, "Permitir o cadastro de valores gerais de comissão", [], false, true));
+tarefasFilhas.push(newTarefa(8643, "Modificar importacao da planilha de comissoes", [], true, false));
+
+sprint_86.tarefas.push(newTarefa(7387, "[Tarefa pai] Criar comissões para não profissionais", tarefasFilhas));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
