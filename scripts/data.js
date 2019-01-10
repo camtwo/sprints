@@ -161,9 +161,9 @@ sprint_86.tarefas.push(newTarefa(7387, "[Tarefa pai] Criar comissões para não 
 const sprint_87 = {
 		title: 'Sprint 87',
 		sprint_number: "87",
-		meta: "Possibilitar gerar comissão para não profissionais.",
-		data_atualizacao: "...",
-		easter_egg: "/static/images/andre.png",
+		meta: "Possibilitar agendar para executores, e não somente para profissionais de saúde.",
+		data_atualizacao: "14/01/2019 a partir das 22:00",
+		easter_egg: "/static/images/vibracao.gif",
 		tarefas: []
 }
 
@@ -185,7 +185,6 @@ sprint_87.tarefas.push(newTarefa(8727, "Sincronizar cadastro de executor com o c
 sprint_87.tarefas.push(newTarefa(8693, "Possibilitar filtrar por especialidade no autocomplete de procedimento", []));
 sprint_87.tarefas.push(newTarefa(8695, "Possibilitar escolha de obrigatoriedade de telefone celular ao cadastrar o paciente", []));
 sprint_87.tarefas.push(newTarefa(8669, "Colocar a cidade do paciente no relatório de dados do convênio", []));
-
 
 const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87];
 
