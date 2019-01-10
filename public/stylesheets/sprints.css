@@ -321,3 +321,7 @@ pre code {
 a:hover {
       cursor: pointer;
 }
+.subtarefa{
+      padding-left: 20px;
+      padding-top: 10px;
+}

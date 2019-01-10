@@ -1,15 +1,27 @@
 mixin tarefa(tarefa)
 	ul
 		li.task-list-item
-			input.task-list-item-checkbox.itemTarefa.form-checkbox(type='checkbox', disabled=tarefa.disabled, checked=tarefa.checked)
-			
-			- var link = 'http://redmine.camtwo.com.br/issues/'+tarefa.numero;
+			+UmaTarefa(tarefa)
+			+Subtarefas(tarefa.subtarefas)
 
-			a(href=link, target="_blank") #{tarefa.numero}
-			|	- #{tarefa.titulo}
-		each subtarefa in tarefa.subtarefas
+
+mixin Subtarefas(subtarefas)
+	each subtarefa in subtarefas
+		if subtarefa.subtarefas.length
+			div.subtarefa
+				+UmaTarefa(subtarefa)
+				+Subtarefas(subtarefa.subtarefas)
+		else
 			blockquote
 				p
 					- var link = 'http://redmine.camtwo.com.br/issues/#{subtarefa.numero}'
 					a(href=link, target="_blank") #{subtarefa.numero}
 					|	- #{subtarefa.titulo}
+
+
+mixin UmaTarefa(tarefa)
+	div
+		input(class="task-list-item-checkbox itemTarefa form-checkbox", type='checkbox', disabled=tarefa.disabled, checked=tarefa.checked)
+		- var link = 'http://redmine.camtwo.com.br/issues/'+tarefa.numero;
+		a(href=link, target="_blank") #{tarefa.numero}
+		|	- #{tarefa.titulo}
