@@ -171,6 +171,7 @@ const _t_87 = [
 	newTarefa(8701, "1 - Criar e gerenciar pessoas agendáveis", [
 		newTarefa(8725, "Migrar banco de dados para a nova estrutura", []),
 		newTarefa(8726, "Criar entidade e modificar queries relacionadas", []),
+		newTarefa(8727, "Sincronizar cadastro de executor com o cadastro de profissionais de saúde", [])
 	]),
 	newTarefa(8697, "2 - Modificar o modal da agenda para buscar executores ao invés de profissionais", []),
 	newTarefa(8702, "3 - No TISS, filtrar somente as agendas cuja execução é de profissional", []),
@@ -178,10 +179,8 @@ const _t_87 = [
 ];
 
 sprint_87.tarefas.push(newTarefa(8667, "[Tarefa Pai] Possibilitar agendar para não profissionais", _t_87));
-
 sprint_87.tarefas.push(newTarefa(8671, "Adicionar somatório total no final da pagina dos relatório de orçamentos por status", []));
 sprint_87.tarefas.push(newTarefa(8694, "Criar campo conta contábil no cadastro de categorias de contas", []));
-sprint_87.tarefas.push(newTarefa(8727, "Sincronizar cadastro de executor com o cadastro de profissionais de saúde", []));
 sprint_87.tarefas.push(newTarefa(8693, "Possibilitar filtrar por especialidade no autocomplete de procedimento", []));
 sprint_87.tarefas.push(newTarefa(8695, "Possibilitar escolha de obrigatoriedade de telefone celular ao cadastrar o paciente", []));
 sprint_87.tarefas.push(newTarefa(8669, "Colocar a cidade do paciente no relatório de dados do convênio", []));
