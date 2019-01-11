@@ -162,7 +162,7 @@ const sprint_87 = {
 		title: 'Sprint 87',
 		sprint_number: "87",
 		meta: "Possibilitar agendar para executores, e não somente para profissionais de saúde.",
-		data_atualizacao: "14/01/2019 a partir das 22:00",
+		data_atualizacao: "13/01/2019 a partir das 22:00",
 		easter_egg: "/static/images/vibracao.gif",
 		tarefas: []
 }
