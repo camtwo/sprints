@@ -185,7 +185,33 @@ sprint_87.tarefas.push(newTarefa(8693, "Possibilitar filtrar por especialidade n
 sprint_87.tarefas.push(newTarefa(8695, "Possibilitar escolha de obrigatoriedade de telefone celular ao cadastrar o paciente", []));
 sprint_87.tarefas.push(newTarefa(8669, "Colocar a cidade do paciente no relatório de dados do convênio", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87];
+
+const sprint_88 = {
+		title: 'Sprint 88',
+		sprint_number: "88",
+		meta: "Possibilitar emitir nota de serviço para a cidade de Florianópolis e emitir boletos para o Banco Uniprime.",
+		data_atualizacao: "27/01/2019 a partir das 22:00",
+		easter_egg: "/static/images/dimitri.gif",
+		tarefas: []
+}
+
+sprint_88.tarefas.push(newTarefa(6438, "[FAST] Bug ao trocar de clínica no call center", []));
+sprint_88.tarefas.push(newTarefa(7999, "[FAST] Criar relatório que mostre informações dos pacientes que faltaram na ultima consulta", []));
+sprint_88.tarefas.push(newTarefa(8717, "[FAST] Colocar totalizador de valores no relatorio de de movimentos do estoque", []));
+sprint_88.tarefas.push(newTarefa(8379, "[FAST] Aparecer o nome do profissional posto no campo 'Indicado por:' nos prontuários, nas 'Outras informações'", []));
+sprint_88.tarefas.push(newTarefa(8436, "[FAST] No relatório de procedimentos faturados por período criar filtro por profissional e ordenar os dados por data", []));
+sprint_88.tarefas.push(newTarefa(8141, "[FAST] Ao criar um paciente por padrão vir marcada as opções de envio de sms e email de aniversário", []));
+sprint_88.tarefas.push(newTarefa(8433, "[FAST] Colocar caixa de seleção na renegociação para selecionar todos", []));
+sprint_88.tarefas.push(newTarefa(8218, "Homologar boletos para o banco Uniprime", []));
+sprint_88.tarefas.push(newTarefa(8331, "Implementar Nota Fiscal ( nfs-e ) PHI Concept Serviços - prefeitura de Florianópolis SC", []));
+sprint_88.tarefas.push(newTarefa(8682, "Possibilitar ordenar as informações complementares", []));
+sprint_88.tarefas.push(newTarefa(8222, "No relatório de orçamento por status, melhorar a exibição do relatório na versão para os formatos .xlsx e .docx", []));
+sprint_88.tarefas.push(newTarefa(8709, "Quando uma agenda estiver vinculada com orçamento odontológico, a aba de financeiro deve mostrar os faturamentos vinculados ao orçamento", []));
+sprint_88.tarefas.push(newTarefa(8305, "Na pesquisa geral do sistema, quando pesquisar por profissional com escala, mostrar descrição do tipo de consulta.", []));
+
+ 
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
