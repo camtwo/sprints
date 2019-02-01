@@ -209,9 +209,23 @@ sprint_88.tarefas.push(newTarefa(8222, "No relatório de orçamento por status, 
 sprint_88.tarefas.push(newTarefa(8709, "Quando uma agenda estiver vinculada com orçamento odontológico, a aba de financeiro deve mostrar os faturamentos vinculados ao orçamento", []));
 sprint_88.tarefas.push(newTarefa(8305, "Na pesquisa geral do sistema, quando pesquisar por profissional com escala, mostrar descrição do tipo de consulta.", []));
 
- 
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88];
+const sprint_89 = {
+		title: 'Sprint 89',
+		sprint_number: "89",
+		meta: "Possibilitar assinar o laudo através de uma imagem e escolher os dias da semana em uma campanha",
+		data_atualizacao: "10/02/2019 a partir das 22:00",
+		easter_egg: "/static/images/feliz1.gif",
+		tarefas: []
+}
+
+sprint_89.tarefas.push(newTarefa(8052, "Criar tela para poder filtrar pacientes que já tem um tempo que não passam pela clínica", []));
+sprint_89.tarefas.push(newTarefa(8731, "Possibilitar a inclusão de uma imagem da assinatura nos laudos", []));
+sprint_89.tarefas.push(newTarefa(8712, "Possibilitar escolher os dias da semana no período da campanha", []));
+sprint_89.tarefas.push(newTarefa(8612, "Problemas na lista de espera", []));
+sprint_89.tarefas.push(newTarefa(8653, "Fazer filtro na tela de orçamentos por data execução", []));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89];
 
 module.exports = {
 	dadosDaSprint: (sprint_n)=>{
