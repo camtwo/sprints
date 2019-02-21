@@ -225,9 +225,46 @@ sprint_89.tarefas.push(newTarefa(8712, "Possibilitar escolher os dias da semana 
 sprint_89.tarefas.push(newTarefa(8612, "Problemas na lista de espera", []));
 sprint_89.tarefas.push(newTarefa(8653, "Fazer filtro na tela de orçamentos por data execução", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89];
+
+const sprint_90 = {
+		title: 'Sprint 90',
+		sprint_number: "90",
+		meta: "Possibilitar split de pagamento e melhorias na importação de procedimentos",
+		data_atualizacao: "24/02/2019 a partir das 22:00",
+		easter_egg: "/static/images/feliz1.gif",
+		tarefas: []
+}
+
+sprint_90.tarefas.push(newTarefa(8827, "Criar relatório de receita líquida analítico", []));
+sprint_90.tarefas.push(newTarefa(8820, "Problema de emissão de nota fiscal chapecó", []));
+sprint_90.tarefas.push(newTarefa(8826, "Modificar a tela de emissão de notas para faturamentos criados no modo de split de pagamento", []));
+sprint_90.tarefas.push(newTarefa(8784, "Atualizar integração com RDStation para API 2.0", []));
+sprint_90.tarefas.push(newTarefa(8822, "Identificar que o faturamento foi criado no modo de split de pagamento", []));
+sprint_90.tarefas.push(newTarefa(8821, "Listar resumo de repasses quando acessar opção de \"gerar recibo\" em faturamentos gerados no modo split", []));
+sprint_90.tarefas.push(newTarefa(8818, "Criar relatório de receita líquida sintético", []));
+sprint_90.tarefas.push(newTarefa(8791, "Melhorar importação de exames no tipo de procedimento", []));
+sprint_90.tarefas.push(newTarefa(8798, "Melhorar visualização das datas de pesquisa ao efetuar conciliação bancária", []));
+sprint_90.tarefas.push(newTarefa(8817, "Aumentar tamanho do campo na coluna de observações do tipo de procedimento", []));
+sprint_90.tarefas.push(newTarefa(8823, "Modificar a tela de emissão de recibos para faturamentos criados no modo de split de pagamento", []));
+sprint_90.tarefas.push(newTarefa(8828, "Otimizar query do relatorio de agendas por periodo (com telefones) e o relatorio de pacientes por tempo sem agendar", []));
+sprint_90.tarefas.push(newTarefa(8480, "Poder selecionar o prazo para reconsulta de cada convênio", []));
+sprint_90.tarefas.push(newTarefa(8819, "Criar novo atributo de configuração para identificar que a clínica tem split de pagamento", []));
+sprint_90.tarefas.push(newTarefa(6217, "Homologação NFS-e Contagem MG", []));
+sprint_90.tarefas.push(newTarefa(8852, "Adicionar timeout na conexão para emissão, consulta e cancelamento de NF", []));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90];
 
 module.exports = {
+	getSprints: ()=>{
+		return SPRINTS.map((spr)=>{
+			return {
+				"nome": spr.title,
+				"numero": spr.sprint_number,
+				"meta": spr.meta,
+				"numTarefas": spr.tarefas.length
+			}
+		});
+	},
 	dadosDaSprint: (sprint_n)=>{
 		
 		const sp  = SPRINTS.filter((index)=>{

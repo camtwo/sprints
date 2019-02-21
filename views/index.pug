@@ -3,21 +3,8 @@ extends layout
 block content
   h1= title
   p #{title}
-  div
-    a(href="/sprints/81") Sprint 81
-  div
-    a(href="/sprints/82") Sprint 82
-  div
-    a(href="/sprints/83") Sprint 83
-  div
-    a(href="/sprints/84") Sprint 84
-  div
-    a(href="/sprints/85") Sprint 85
-  div
-    a(href="/sprints/86") Sprint 86
-  div
-    a(href="/sprints/87") Sprint 87
-  div
-    a(href="/sprints/88") Sprint 88
-  div
-    a(href="/sprints/89") Sprint 89
+
+  each sprint in sprints
+    div.card-sprint
+      a(href=`/sprints/${sprint.numero}`)=sprint.nome
+      small=`(${sprint.numTarefas} tarefas) ${sprint.meta}`

@@ -43,3 +43,17 @@ label {
 .stackedit__html {
 	max-width: 1000px !important;
 }
+
+.card-sprint{
+	background-color: #fafafa;
+	border: solid 1px #f1f1f1;
+	padding: 2px;
+	margin-bottom: 2px;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.card-sprint small{
+	font-size: 10px;
+	padding-left: 5px;
+}
