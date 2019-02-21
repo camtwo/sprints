@@ -231,7 +231,7 @@ const sprint_90 = {
 		sprint_number: "90",
 		meta: "Possibilitar split de pagamento e melhorias na importação de procedimentos",
 		data_atualizacao: "24/02/2019 a partir das 22:00",
-		easter_egg: "/static/images/feliz1.gif",
+		easter_egg: "/static/images/sprint90.gif",
 		tarefas: []
 }
 
