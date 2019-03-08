@@ -252,7 +252,38 @@ sprint_90.tarefas.push(newTarefa(8819, "Criar novo atributo de configuração pa
 sprint_90.tarefas.push(newTarefa(6217, "Homologação NFS-e Contagem MG", []));
 sprint_90.tarefas.push(newTarefa(8852, "Adicionar timeout na conexão para emissão, consulta e cancelamento de NF", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90];
+
+const sprint_91 = {
+		title: 'Sprint 91',
+		sprint_number: "91",
+		meta: "Permitir realizar a cobrança de um orçamentos somente após realizar o agendamento",
+		data_atualizacao: "10/03/2019 a partir das 22:00",
+		easter_egg: "/static/images/sprint91.gif",
+		tarefas: []
+}
+
+const _t_91 = [
+	newTarefa(8886, "No orçamento, permitir cadastro do mesmo tipo de procedimento mais de uma vez",[]),
+	newTarefa(8892, "Vincular faturamentos de agenda ao orçamento",[]),
+	newTarefa(8891, "Possibilitar a seleção de procedimentos na agenda para orçamentos odontológicos",[]),
+	newTarefa(8890, "Identificar tipo de geração de financeiro no orçamento",[])
+]
+
+sprint_91.tarefas.push(newTarefa(8885, "[Tarefa pai] Possibilitar a cobrança de orçamentos somente após agendar", _t_91));
+sprint_91.tarefas.push(newTarefa(8855, "Aumentar prazo de dias para filtro da tela de movimentação financeira", []));
+sprint_91.tarefas.push(newTarefa(8867, "Adicionar macro com o valor dos procedimentos realizados por terceiros", []));
+sprint_91.tarefas.push(newTarefa(8876, "Adicionar configuração para que o recibo em a4 não imprima cabeçalho", []));
+sprint_91.tarefas.push(newTarefa(8883, "Filtrar relatório orçamento também pelo código procedimento", []));
+sprint_91.tarefas.push(newTarefa(8848, "Mesmo com a opção de bloquear atendimento sem pagamento, o sistema permite atender pela tela de prontuários do paciente", []));
+sprint_91.tarefas.push(newTarefa(8849, "Quando a clínica bloqueia atendimento sem pagamento, deve permitir a visualização dos dados de prontuário dos pacientes", []));
+sprint_91.tarefas.push(newTarefa(8753, "Executar drop das colunas nao utilizadas ref migração comissões", []));
+sprint_91.tarefas.push(newTarefa(8857, "Executar drop das colunas de reconsulta da tabela CONFIGURACAO", []));
+
+sprint_91.tarefas.push(newTarefa(8896, "Criar estrutura de controle de relatórios customizados", []));
+sprint_91.tarefas.push(newTarefa(8889, "Relatório de vendas", []));
+sprint_91.tarefas.push(newTarefa(8887, "Criar relatório ativos telemarketing", []));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91];
 
 module.exports = {
 	getSprints: ()=>{
