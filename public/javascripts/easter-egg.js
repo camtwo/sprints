@@ -21,5 +21,17 @@ Array.from(document.getElementsByClassName("itemTarefa")).forEach((e)=>{
 			document.getElementById('atualização').style.display = 'none';
 			umaVez = false;
 		}
+		salvarTarefas();
 	}
 });
+
+function salvarTarefas(){
+	const todosOsInputs = Array.from(document.getElementsByClassName("itemTarefa"));
+	const inputsCheckados = todosOsInputs.filter((e)=>{return e.checked});
+
+	const dados = inputsCheckados.map(function(inp){
+		return inp.dataset.numero;
+	});
+
+	return StorageController.salvarTarefas(document.getElementById("numero-sprint").value, dados);
+}

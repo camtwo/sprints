@@ -7,6 +7,7 @@ block content
 	
 	include menu_sprints
 
+	input(type="hidden", id="numero-sprint", value=sprint_number)
 	.stackedit__right
 		.stackedit__html
 			h1(id='reunião-de-revisão-sprint-80') Reunião de revisão Sprint #{sprint_number}
@@ -29,4 +30,12 @@ block content
 				img(src=easter_egg, width='400', heigth='400')
 
 block js
+		script(type='text/javascript' src="/javascripts/storage.js")
 		script(type='text/javascript' src="/javascripts/easter-egg.js")
+		script.
+			const tarefasSpr = StorageController.recuperarTarefas(document.getElementById("numero-sprint").value);
+			if(tarefasSpr && tarefasSpr.tarefas){
+				tarefasSpr.tarefas.forEach(function(tr){
+					document.querySelector(`[data-numero='${tr}']`).checked=true
+				});
+			}

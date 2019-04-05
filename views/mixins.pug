@@ -18,10 +18,9 @@ mixin Subtarefas(subtarefas)
 					a(href=link, target="_blank") #{subtarefa.numero}
 					|	- #{subtarefa.titulo}
 
-
 mixin UmaTarefa(tarefa)
 	div
-		input(class="task-list-item-checkbox itemTarefa form-checkbox", type='checkbox', disabled=tarefa.disabled, checked=tarefa.checked)
+		input(class="task-list-item-checkbox itemTarefa form-checkbox", type='checkbox', disabled=tarefa.disabled, checked=tarefa.checked, data-numero=tarefa.numero)
 		- var link = 'http://redmine.camtwo.com.br/issues/'+tarefa.numero;
 		a(href=link, target="_blank") #{tarefa.numero}
 		|	- #{tarefa.titulo}

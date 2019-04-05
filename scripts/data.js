@@ -283,7 +283,31 @@ sprint_91.tarefas.push(newTarefa(8896, "Criar estrutura de controle de relatóri
 sprint_91.tarefas.push(newTarefa(8889, "Relatório de vendas", []));
 sprint_91.tarefas.push(newTarefa(8887, "Criar relatório ativos telemarketing", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91];
+
+const sprint_fast_42 = {
+		title: 'Sprint fast 42',
+		sprint_number: "F42",
+		meta: "Melhorias no dashboard, alteração em massa, whitelabel e Correções diversas",
+		data_atualizacao: "14/04/2019 a partir das 22:00",
+		easter_egg: "/static/images/sprintFast42.gif",
+		tarefas: []
+}
+
+sprint_fast_42.tarefas.push(newTarefa(7988, "Implementar Nota Fiscal ( nfs-e ) Clinica do Bem - prefeitura de Belo Horizonte", [], true, true));
+sprint_fast_42.tarefas.push(newTarefa(8977, "Alinhar elementos html", []));
+sprint_fast_42.tarefas.push(newTarefa(8926, "Melhorias no dashboard", []));
+sprint_fast_42.tarefas.push(newTarefa(8925, "Alterar visualização de pacientes com cadastro incompleto no dashboard", []));
+sprint_fast_42.tarefas.push(newTarefa(8923, "Possibilitar busca e e alteração em massa pelo status da agenda", []));
+sprint_fast_42.tarefas.push(newTarefa(8915, "Alinhar campos do documento impresso do orçamento", []));
+sprint_fast_42.tarefas.push(newTarefa(8881, "Exportar template de importação de procedimento com valores preenchidos", []));
+sprint_fast_42.tarefas.push(newTarefa(8949, "Sistema duplica os procedimentos ao importar tabela", []));
+sprint_fast_42.tarefas.push(newTarefa(8922, "Melhorar modal de atendimento odontológico", []));
+sprint_fast_42.tarefas.push(newTarefa(8946, "Refazer impressão do recibo de pagamento financeiro", []));
+sprint_fast_42.tarefas.push(newTarefa(8942, "Erro ao listar escala de profissional com datas inválidas", []));
+sprint_fast_42.tarefas.push(newTarefa(8979, "Erro no SQL relatório personalizado Vendas", []));
+sprint_fast_42.tarefas.push(newTarefa(8927, "Programar whitelabel para academia da pele", []));
+	
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42];
 
 module.exports = {
 	getSprints: ()=>{
