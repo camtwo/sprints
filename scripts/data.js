@@ -1,12 +1,13 @@
 
-function newTarefa(numero, titulo, subtarefas, disabled, checked){
+function newTarefa(numero, titulo, subtarefas, disabled, checked, forceMarker){
 	return {
 		"numero": numero,
 		"titulo": titulo,
 		"subtarefas": subtarefas || [],
 		"isPai": (subtarefas || []).length > 0,
 		"disabled" : disabled || false,
-		"checked" : checked || false
+		"checked" : checked || false,
+		"forceMarker": forceMarker || false
 	}
 }
 
@@ -319,15 +320,18 @@ const sprint_92 = {
 	tarefas: []
 }
 
-sprint_92.tarefas.push(newTarefa(8928, "Possibilitar pagamento de mais de um tipo de comissão para o mesmo procedimento", []));
-sprint_92.tarefas.push(newTarefa(8899, "Botão aplicar a todos no desconto/acréscimo por procedimento no faturamento", []));
-sprint_92.tarefas.push(newTarefa(8931, "Criar cadastro de tipos de repasse", []));
-sprint_92.tarefas.push(newTarefa(8932, "Vincular o tipo de repasse com o tipo procedimento", []));
-sprint_92.tarefas.push(newTarefa(8935, "Possibilitar a inserção de pessoas do repasse na tela de faturar", []));
-sprint_92.tarefas.push(newTarefa(8936, "Possibilitar a inserção de pessoas do repasse na tela de orçamento", []));
-sprint_92.tarefas.push(newTarefa(8938, "Ajustar o cálculo de comissões para o novo formato de configuração", []));
+const tf_92 = [];
+tf_92.push(newTarefa(8931, "Criar cadastro de tipos de repasse", [], false, false, true));
+tf_92.push(newTarefa(8932, "Vincular o tipo de repasse com o tipo procedimento", [], false, false, true));
+tf_92.push(newTarefa(8962, "Vincular regras para tipos de repasse e pessoas", [], false, false, true));
+tf_92.push(newTarefa(8936, "Possibilitar a inserção de pessoas do repasse na tela de orçamento", [], false, false, true));
+tf_92.push(newTarefa(8935, "Possibilitar a inserção de pessoas do repasse na tela de faturar", [], false, false, true));
+tf_92.push(newTarefa(8899, "Botão aplicar a todos no desconto/acréscimo por procedimento no faturamento", [], false, false, true));
+tf_92.push(newTarefa(8938, "Ajustar o cálculo de comissões para o novo formato de configuração", [], false, false, true));
+
 sprint_92.tarefas.push(newTarefa(8953, "Possibilitar alteração de procedimentos de orçamentos já aprovados", []));
-sprint_92.tarefas.push(newTarefa(8962, "Vincular regras para tipos de repasse e pessoas", []));
+sprint_92.tarefas.push(newTarefa(8928, "Possibilitar pagamento de mais de um tipo de comissão para o mesmo procedimento", tf_92));
+
 
 const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92];
 

@@ -7,7 +7,7 @@ mixin tarefa(tarefa)
 
 mixin Subtarefas(subtarefas)
 	each subtarefa in subtarefas
-		if subtarefa.subtarefas.length
+		if subtarefa.subtarefas.length || subtarefa.forceMarker
 			div.subtarefa
 				+UmaTarefa(subtarefa)
 				+Subtarefas(subtarefa.subtarefas)

@@ -4,7 +4,8 @@ block content
   h1= title
   p #{title}
 
-  each sprint in sprints
-    div.card-sprint
-      a(href=`/sprints/${sprint.numero}`)=sprint.nome
-      small=`(${sprint.numTarefas} tarefas) ${sprint.meta}`
+  div
+    each sprint in sprints
+      div.card-sprint
+        a(href=`/sprints/${sprint.numero}`)=sprint.nome
+        small=`(${sprint.numTarefas} tarefas) ${sprint.meta}`
