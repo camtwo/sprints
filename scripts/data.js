@@ -262,6 +262,8 @@ const sprint_91 = {
 		tarefas: []
 }
 
+
+
 const _t_91 = [
 	newTarefa(8886, "No orçamento, permitir cadastro do mesmo tipo de procedimento mais de uma vez",[]),
 	newTarefa(8892, "Vincular faturamentos de agenda ao orçamento",[]),
@@ -307,7 +309,27 @@ sprint_fast_42.tarefas.push(newTarefa(8942, "Erro ao listar escala de profission
 sprint_fast_42.tarefas.push(newTarefa(8979, "Erro no SQL relatório personalizado Vendas", []));
 sprint_fast_42.tarefas.push(newTarefa(8927, "Programar whitelabel para academia da pele", []));
 	
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42];
+
+const sprint_92 = {
+	title: 'Sprint 92',
+	sprint_number: "92",
+	meta: "Possibilitar geração de repasse(comissão) para diversas pessoas em um faturamento e alterar procedimentos do orçamento",
+	data_atualizacao: "21/04/2019 a partir das 22:00",
+	easter_egg: "/static/images/sprint92.gif",
+	tarefas: []
+}
+
+sprint_92.tarefas.push(newTarefa(8928, "Possibilitar pagamento de mais de um tipo de comissão para o mesmo procedimento", []));
+sprint_92.tarefas.push(newTarefa(8899, "Botão aplicar a todos no desconto/acréscimo por procedimento no faturamento", []));
+sprint_92.tarefas.push(newTarefa(8931, "Criar cadastro de tipos de repasse", []));
+sprint_92.tarefas.push(newTarefa(8932, "Vincular o tipo de repasse com o tipo procedimento", []));
+sprint_92.tarefas.push(newTarefa(8935, "Possibilitar a inserção de pessoas do repasse na tela de faturar", []));
+sprint_92.tarefas.push(newTarefa(8936, "Possibilitar a inserção de pessoas do repasse na tela de orçamento", []));
+sprint_92.tarefas.push(newTarefa(8938, "Ajustar o cálculo de comissões para o novo formato de configuração", []));
+sprint_92.tarefas.push(newTarefa(8953, "Possibilitar alteração de procedimentos de orçamentos já aprovados", []));
+sprint_92.tarefas.push(newTarefa(8962, "Vincular regras para tipos de repasse e pessoas", []));
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92];
 
 module.exports = {
 	getSprints: ()=>{
