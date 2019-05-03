@@ -333,7 +333,38 @@ sprint_92.tarefas.push(newTarefa(8953, "Possibilitar alteração de procedimento
 sprint_92.tarefas.push(newTarefa(8928, "Possibilitar pagamento de mais de um tipo de comissão para o mesmo procedimento", tf_92));
 
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92];
+const sprint_93 = {
+	title: 'Sprint 93',
+	sprint_number: "93",
+	meta: "Possibilitar o envio de mensagens via WhatsApp e possibilitar a geração de guias Tiss com mais de uma agenda.",
+	data_atualizacao: "05/05/2019 a partir das 22:00",
+	easter_egg: "/static/images/sprint93.gif",
+	tarefas: []
+}
+
+sprint_93.tarefas.push(newTarefa(8982, "Preencher dados da guia de solicitação TISS", []));	
+
+const tp1=[];
+tp1.push(newTarefa(8985, "Possibilitar gerar guias para agendas não finalizadas", [], false, false, true));
+tp1.push(newTarefa(8988, "Possibilitar escolher mais de uma agenda para uma guia TISS", [], false, false, true));
+sprint_93.tarefas.push(newTarefa(6083, "[TISS] Permitir inserção de procedimentos seriados na guia SADT", tp1));
+
+
+sprint_93.tarefas.push(newTarefa(9005, "Problema nas margens da solicitação de exames", []));
+sprint_93.tarefas.push(newTarefa(8993, "Alterar o formato de visualização da hora na impressão do prontuário", []));
+sprint_93.tarefas.push(newTarefa(8971, "Mostrar o nome da conta conectada no RD Station", []));
+sprint_93.tarefas.push(newTarefa(8992, "Cliente/fornecedor é criado com status inativo ao criar novo usuário", []));
+
+const tp2=[];
+tp2.push(newTarefa(8981, "Criar tela de configuração para whats", [], false, false, true));
+tp2.push(newTarefa(9004, "Criar gatilhos da agenda para envio de Whats", [], false, false, true));
+tp2.push(newTarefa(9002, "Criar serviço REST para whats", []));
+tp2.push(newTarefa(9003, "Consumir webservice pigeon", []));
+
+sprint_93.tarefas.push(newTarefa(8943, "[Tarefa Pai] Integração com WhatsApp", tp2));
+
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93];
 
 module.exports = {
 	getSprints: ()=>{
