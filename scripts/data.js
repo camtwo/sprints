@@ -363,8 +363,27 @@ tp2.push(newTarefa(9003, "Consumir webservice pigeon", []));
 
 sprint_93.tarefas.push(newTarefa(8943, "[Tarefa Pai] Integração com WhatsApp", tp2));
 
+const sprint_94 = {
+	title: 'Sprint 94',
+	sprint_number: "94",
+	meta: "Possibilitar o envio de guias Tiss através de webservices e realizar a devolução de dinheiro através do orçamento.",
+	data_atualizacao: "19/05/2019 a partir das 22:00",
+	easter_egg: "/static/images/sprint94.gif",
+	tarefas: []
+}
+sprint_94.tarefas.push(newTarefa(8984, "Criar consumo webservice solicitação procedimento TISS", []));
+sprint_94.tarefas.push(newTarefa(8995, "Criar uma configuração dos webservices TISS", []));
+sprint_94.tarefas.push(newTarefa(8996, "Criar consumo webservice Elegibilidade", []));
+sprint_94.tarefas.push(newTarefa(9055, "Possibilitar devolver dinheiro pelo orçamento", []));
+sprint_94.tarefas.push(newTarefa(9057, "Imprimir Sessões do prontuário", []));
+sprint_94.tarefas.push(newTarefa(8987, "Faturar TISS pela agenda", []));
+sprint_94.tarefas.push(newTarefa(9033, "Refatorar relatório de movimentação de estoque", []));
+sprint_94.tarefas.push(newTarefa(9038, "Refatorar relatório de orçamentos por status", []));
+sprint_94.tarefas.push(newTarefa(9045, "Melhoria gráfica", []));
+sprint_94.tarefas.push(newTarefa(9046, "Melhoria gráfica 2", []));
+sprint_94.tarefas.push(newTarefa(4840, "WebService TISS Unimed BH", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93];
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94];
 
 module.exports = {
 	getSprints: ()=>{
