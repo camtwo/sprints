@@ -383,7 +383,34 @@ sprint_94.tarefas.push(newTarefa(9045, "Melhoria gráfica", []));
 sprint_94.tarefas.push(newTarefa(9046, "Melhoria gráfica 2", []));
 sprint_94.tarefas.push(newTarefa(4840, "WebService TISS Unimed BH", []));
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94];
+
+const sprint_96 = {
+	title: 'Sprint 96',
+	sprint_number: "96",
+	meta: "Iniciar a divisão em pacotes de funcionalidades, melhorar fluxo de caixa e fazer o extrato das contas.",
+	data_atualizacao: "30/06/2019 a partir das 22:00",
+	easter_egg: "/static/images/sprint96.gif",
+	tarefas: []
+}
+
+const tp96=[];
+tp96.push(newTarefa(9103, "Criar anotação e anotar todos os métodos com a sua funcionalidade", [], false, false, true));
+tp96.push(newTarefa(9104, "Criar jar com funcionalidades do sistema", [], false, false, true));
+tp96.push(newTarefa(9192, "Criar rotina de bloqueio de build sem anotação", [], false, false, true));
+
+sprint_96.tarefas.push(newTarefa(9102, "[Tarefa Pai] Dividir o sistema em pacotes de funcionalidades", tp96));
+sprint_96.tarefas.push(newTarefa(9171, "Ajustar fluxo de caixa para considerar os pagamentos detalhes", []));
+sprint_96.tarefas.push(newTarefa(9087, "Alterar lógica de recados removendo DadosUsuario e inserindo Pessoa", []));
+sprint_96.tarefas.push(newTarefa(9031, "Criar campo data de retorno e status de contato nas observações do paciente", []));
+sprint_96.tarefas.push(newTarefa(9032, "Relatório de observações do paciente", []));
+sprint_96.tarefas.push(newTarefa(9093, "Remover busca de profissionais da agendaService", []));
+sprint_96.tarefas.push(newTarefa(9175, "Criar tela de extrato de contas", []));
+sprint_96.tarefas.push(newTarefa(9226, "Vincular conciliação bancária à nova tela do extrato/conciliação conta", []));
+
+
+
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94, sprint_96];
 
 module.exports = {
 	getSprints: ()=>{
