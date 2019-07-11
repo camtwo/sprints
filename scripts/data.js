@@ -409,8 +409,34 @@ sprint_96.tarefas.push(newTarefa(9226, "Vincular conciliação bancária à nova
 
 
 
+const sprint_97 = {
+       title: 'Sprint 97',
+       sprint_number: "97",
+       meta: "Modificar formato de cobrança por planos e sincronia com ADM e CNN",
+       data_atualizacao: "16/07/2019 a partir das 22:00",
+       easter_egg: "/static/images/sprint97.webp",
+       tarefas: []
+}
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94, sprint_96];
+sprint_97.tarefas.push(newTarefa(9288, "Não mostra dentes marcados ao adicionar na seleção do odontograma", []));
+sprint_97.tarefas.push(newTarefa(9252, "Não mostra a anamnese quanto tem só OBS", []));
+sprint_97.tarefas.push(newTarefa(9250, "Criar opção padrão de pessoa no tipo repasse", []));
+sprint_97.tarefas.push(newTarefa(9247, "Colocar icone na linha da agenda confirmada pelo paciente", []));
+sprint_97.tarefas.push(newTarefa(9245, "Erro ao salvar paciente", []));
+sprint_97.tarefas.push(newTarefa(9243, "Erro ao trocar cor da agenda no callcenter", []));
+sprint_97.tarefas.push(newTarefa(9236, "Criar configuração para não mostrar a imagem do paciente no painel de chamadas", []));
+sprint_97.tarefas.push(newTarefa(9215, "Em meu plano ter a opção de migrar plano", []));
+sprint_97.tarefas.push(newTarefa(9214, "Criar validação para URL não presente na licença", []));
+sprint_97.tarefas.push(newTarefa(9210, "Criar estrutura para receber uma licença do ADM ", []));
+sprint_97.tarefas.push(newTarefa(9161, "Erro ao gravar agenda externa - repasses e regra geral", []));
+sprint_97.tarefas.push(newTarefa(9133, "Refatorar query de busca de pacientes aniversariantes", []));
+sprint_97.tarefas.push(newTarefa(9122, "Alterações na exportação de fluxo de caixa", []));
+
+
+
+
+
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94, sprint_96, sprint_97];
 
 module.exports = {
 	getSprints: ()=>{
