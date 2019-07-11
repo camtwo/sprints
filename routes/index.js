@@ -5,7 +5,7 @@ var dadosSprint = require("../scripts/data");
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	res.render('index', {
-		title: 'Projeto de reunião do final da sprint',
+		title: 'Reunião de final das sprints',
 		sprints: dadosSprint.getSprints().reverse()
 	});
 });
