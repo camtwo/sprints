@@ -432,11 +432,33 @@ sprint_97.tarefas.push(newTarefa(9161, "Erro ao gravar agenda externa - repasses
 sprint_97.tarefas.push(newTarefa(9133, "Refatorar query de busca de pacientes aniversariantes", []));
 sprint_97.tarefas.push(newTarefa(9122, "Alterações na exportação de fluxo de caixa", []));
 
+const sprint_98 = {
+       title: 'Sprint 98',
+       sprint_number: "98",
+       meta: "Possibilitar mostrar os pacientes em ordem de chegada e criar opção de remarcação de agenda",
+       data_atualizacao: "31/07/2019 a partir das 22:00",
+       easter_egg: "/static/images/sprint98.webp",
+       tarefas: []
+}
 
+sprint_98.tarefas.push(newTarefa(9212, "NFS-e prefeitura de Santos (já esta em produçao)", [], true, true));
+sprint_98.tarefas.push(newTarefa(9251, "Criar opção de remarcação de agenda", []));
+sprint_98.tarefas.push(newTarefa(9309, "Relatório de remarcações de agenda", []));
+sprint_98.tarefas.push(newTarefa(9308, "Criar relatório sintético CIDs", []));
+sprint_98.tarefas.push(newTarefa(9224, "Relatório analitico de CIDS diagnostico", []));
+sprint_98.tarefas.push(newTarefa(9304, "Adicionar novo filtro relatório orçamento por status", []));
+sprint_98.tarefas.push(newTarefa(9282, "Ajustar relatório agenda por período (com telefone)", []));
+sprint_98.tarefas.push(newTarefa(9305, "Aumentar prazo nas datas dos relatórios para 1 ano", []));
+sprint_98.tarefas.push(newTarefa(9278, "Aumentar o prazo de disponibilidade do arquivo de exportação dos dados", []));
+sprint_98.tarefas.push(newTarefa(9244, "Criar macro de produtos para os documentos do orçamento", []));
+sprint_98.tarefas.push(newTarefa(9285, "Macro para desconto e acréscimos", []));
+sprint_98.tarefas.push(newTarefa(9307, "Substituir chamadas de eventos existentes atualmente pelo novo esquema do spring", []));
+sprint_98.tarefas.push(newTarefa(9188, "Otimizar envio de email a todos os pacientes - tela de pacientes", []));
+sprint_98.tarefas.push(newTarefa(9299, "Remover a classe/tabela PlanoSms e migrar para configuração vertical", []));
+sprint_98.tarefas.push(newTarefa(9240, "Possibilitar mostrar os pacientes em ordem de chegada", []));
 
-
-
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, sprint_93, sprint_94, sprint_96, sprint_97];
+const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, 
+sprint_93, sprint_94, sprint_96, sprint_97, sprint_98];
 
 module.exports = {
 	getSprints: ()=>{
