@@ -478,8 +478,7 @@ sprint_99.tarefas.push(newTarefa(9330, "Otimizar fechamento de caixa", []));
 sprint_99.tarefas.push(newTarefa(9333, "Continuação contify", []));
 
 
-const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, 
-sprint_93, sprint_94, sprint_96, sprint_97, sprint_98, sprint_99];
+const SPRINTS = [sprint_99];
 
 module.exports = {
 	getSprints: ()=>{
