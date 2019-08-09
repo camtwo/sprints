@@ -457,8 +457,29 @@ sprint_98.tarefas.push(newTarefa(9188, "Otimizar envio de email a todos os pacie
 sprint_98.tarefas.push(newTarefa(9299, "Remover a classe/tabela PlanoSms e migrar para configuração vertical", []));
 sprint_98.tarefas.push(newTarefa(9240, "Possibilitar mostrar os pacientes em ordem de chegada", []));
 
+const sprint_99 = {
+       title: 'Sprint 99',
+       sprint_number: "99",
+       meta: "Finalizar integação contify",
+       data_atualizacao: "14/08/2019 a partir das 22:00",
+       easter_egg: "/static/images/sprint99.webp",
+       tarefas: []
+}
+sprint_99.tarefas.push(newTarefa(8109, "[Tarefa Pai] Implementar controle de espaço em disco usado pela empresa/clínica", [], true, true));
+sprint_99.tarefas.push(newTarefa(9024, "Fazer alteração das lógicas de envio/leitura da imagens", []));
+sprint_99.tarefas.push(newTarefa(8972, "Modificar lógica de geração de ID da sessão do pagseguro ao efetuar um pagamento", []));
+sprint_99.tarefas.push(newTarefa(8582, "Adicionar o RG na tela do perfil do paciente", []));
+sprint_99.tarefas.push(newTarefa(9015, "Data de faturamento para o convênio", []));
+sprint_99.tarefas.push(newTarefa(9075, "Remover coluna TipoHorarioAtendimento do userPreferences e inserir no profissional", []));
+sprint_99.tarefas.push(newTarefa(9077, "Remover UserPreferences e seus relacionamentos", []));
+sprint_99.tarefas.push(newTarefa(9199, "Colocar fonte Gráfico pediatria e ampliar idade", []));
+sprint_99.tarefas.push(newTarefa(9266, "Choque de horário em compromissos e agenda", []));
+sprint_99.tarefas.push(newTarefa(9330, "Otimizar fechamento de caixa", []));
+sprint_99.tarefas.push(newTarefa(9333, "Continuação contify", []));
+
+
 const SPRINTS = [sprint_81, sprint_82, sprint_83, sprint_84, sprint_85, sprint_86, sprint_87, sprint_88, sprint_89, sprint_90, sprint_91, sprint_fast_42, sprint_92, 
-sprint_93, sprint_94, sprint_96, sprint_97, sprint_98];
+sprint_93, sprint_94, sprint_96, sprint_97, sprint_98, sprint_99];
 
 module.exports = {
 	getSprints: ()=>{
