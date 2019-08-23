@@ -487,7 +487,7 @@ const sprint_100 = {
        tarefas: []
 }
 
-sprint_100.tarefas.push(newTarefa(9408, "Excluir tabela USER_PREFERENCES e seus relacionamentos ", [], true, false));
+sprint_100.tarefas.push(newTarefa(9408, "Excluir tabela USER_PREFERENCES e seus relacionamentos ", []));
 sprint_100.tarefas.push(newTarefa(9478, "Sistema está permitindo inativar um prontuário em andamento", []));
 sprint_100.tarefas.push(newTarefa(9471, "Só permitir deferir ou indeferir depois de prontuário finalizado", []));
 sprint_100.tarefas.push(newTarefa(9432, "Permitir edição das datas de início e fim do prontuário", []));
