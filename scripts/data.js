@@ -478,7 +478,36 @@ sprint_99.tarefas.push(newTarefa(9330, "Otimizar fechamento de caixa", []));
 sprint_99.tarefas.push(newTarefa(9333, "Continuação contify", []));
 
 
-const SPRINTS = [sprint_99];
+const sprint_100 = {
+       title: 'Sprint 100',
+       sprint_number: "100",
+       meta: "Possibilitar assinar prontuarios digitalmente.",
+       data_atualizacao: "28/08/2019 a partir das 22:00",
+       easter_egg: "/static/images/sprint100.gif",
+       tarefas: []
+}
+
+sprint_100.tarefas.push(newTarefa(9408, "Excluir tabela USER_PREFERENCES e seus relacionamentos ", [], true, false));
+sprint_100.tarefas.push(newTarefa(9478, "Sistema está permitindo inativar um prontuário em andamento", []));
+sprint_100.tarefas.push(newTarefa(9471, "Só permitir deferir ou indeferir depois de prontuário finalizado", []));
+sprint_100.tarefas.push(newTarefa(9432, "Permitir edição das datas de início e fim do prontuário", []));
+sprint_100.tarefas.push(newTarefa(9391, "Tela para listagem de prontuários pendentes - clínica escola", []));
+sprint_100.tarefas.push(newTarefa(9431, "Permitir configurar se o profissional pode editar as datas de início e fim do prontuário", []));
+sprint_100.tarefas.push(newTarefa(9430, "Permitir editar a data de início e fim do prontuário", []));
+sprint_100.tarefas.push(newTarefa(9428, "Gravar pareceres de indeferimento do prontuário de clínica escola", []));
+sprint_100.tarefas.push(newTarefa(9420, "Modificar lógica de impressão de todos os prontuários do paciente", []));
+sprint_100.tarefas.push(newTarefa(9348, "Possibilitar carregamento de certificado digital do profissional de saúde", []));
+sprint_100.tarefas.push(newTarefa(9424, "Disponibilizar opção de assinar todos os prontuários do paciente", []));
+sprint_100.tarefas.push(newTarefa(9423, "Disponibilizar opção de assinar prontuário individualmente", []));
+sprint_100.tarefas.push(newTarefa(9421, "Mostrar o status da assinatura no header do prontuário", []));
+sprint_100.tarefas.push(newTarefa(9419, "Modificar lógica de impressão de PDF do prontuário", []));
+sprint_100.tarefas.push(newTarefa(9417, "Ao finalizar prontuário, gerar PDF assinado", []));
+sprint_100.tarefas.push(newTarefa(9426, "Assinar novamente o prontuário ao inativar uma seção", []));
+sprint_100.tarefas.push(newTarefa(9427, "Informar que o prontuário será assinado digitalmente ao finalizá-lo", []));
+sprint_100.tarefas.push(newTarefa(9349, "Identificar prontuários assinados digitalmente", []));
+sprint_100.tarefas.push(newTarefa(9346, "Assinar PDF do prontuário com certificado digital", []));
+
+const SPRINTS = [sprint_99, sprint_100];
 
 module.exports = {
 	getSprints: ()=>{
