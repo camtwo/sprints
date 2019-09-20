@@ -507,7 +507,61 @@ sprint_100.tarefas.push(newTarefa(9427, "Informar que o prontuário será assina
 sprint_100.tarefas.push(newTarefa(9349, "Identificar prontuários assinados digitalmente", []));
 sprint_100.tarefas.push(newTarefa(9346, "Assinar PDF do prontuário com certificado digital", []));
 
-const SPRINTS = [sprint_99, sprint_100];
+
+const sprint_101 = {
+       title: 'Sprint 101/102',
+       sprint_number: "101",
+       meta: "Liberação da integracao com a Contify",
+       data_atualizacao: "Tarefas ja atualizadas.",
+       easter_egg: "/static/images/sprint101.webp",
+       tarefas: []
+}
+
+sprint_101.tarefas.push(newTarefa(1, "SPRINT 101", []))
+sprint_101.tarefas.push(newTarefa(9576, "Possibilitar ajustar o periodo para mais dias no agendamento externo", []))
+sprint_101.tarefas.push(newTarefa(9575, "Possibilitar impressão de boletos em formato de 3 por folha", []))
+sprint_101.tarefas.push(newTarefa(9562, "Permitir edição de clínica por todos os planos", []))
+sprint_101.tarefas.push(newTarefa(9560, "Possiblitar a escolha de campo formatado nas perguntas do prontuário", []))
+sprint_101.tarefas.push(newTarefa(9554, "Posicionar o código da tabela TISS o código 22", []))
+sprint_101.tarefas.push(newTarefa(9543, "Relatório personalizado Murilo Clinica Espaço Habilitar ", []))
+sprint_101.tarefas.push(newTarefa(9538, "Adicionar e-mail no campo de cadastro rápido de paciente", []))
+sprint_101.tarefas.push(newTarefa(9516, "Incluir filtro de Ativo/Inativo no relatório de relação de pacientes. ", []))
+sprint_101.tarefas.push(newTarefa(9495, "Não enviar notificacao de alteracao de consulta para determinados status", []))
+sprint_101.tarefas.push(newTarefa(9475, "Criar página para mostrar timeline do paciente", []))
+sprint_101.tarefas.push(newTarefa(9442, "HABILITAR A OPÇÃO 'CRIAR' NO CADASTRO DE CONVÊNIOS", []))
+sprint_101.tarefas.push(newTarefa(9379, "Criar filtro para relatório de Observações", []))
+sprint_101.tarefas.push(newTarefa(9356, "Possibilitar chamar novamente o paciente no painel na tela de atendimentos", []))
+sprint_101.tarefas.push(newTarefa(9194, "Aparecer a data de vencimento do faturamento nos movimentos já baixados. ", []))
+sprint_101.tarefas.push(newTarefa(9023, "Criar rotina para migrar imagens para S3 amazon", []))
+sprint_101.tarefas.push(newTarefa(8109, "[Tarefa Pai] Implementar controle de espaço em disco usado pela empresa/clínica", []))
+sprint_101.tarefas.push(newTarefa(1, "SPRINT 102", []))
+sprint_101.tarefas.push(newTarefa(9521, "Horário de inativação de prontuário incorreto no cabeçalho", []))
+sprint_101.tarefas.push(newTarefa(9502, "NPE ao responder recado", []))
+sprint_101.tarefas.push(newTarefa(9501, "Criar funcionalidade para o usuário repassar a administração 'master' para outro usuário", []))
+sprint_101.tarefas.push(newTarefa(9492, "Melhorar fluxo de nova consulta", []))
+sprint_101.tarefas.push(newTarefa(9489, "Possibilitar cancelamento manual de nota fiscal de serviço", []))
+sprint_101.tarefas.push(newTarefa(9483, "Melhorias no fechamento de caixa", []))
+sprint_101.tarefas.push(newTarefa(9482, "Problema ao prescrever com a MEMED em um usuário específico ", []))
+sprint_101.tarefas.push(newTarefa(9479, "Reenviar SMS e Whats", []))
+sprint_101.tarefas.push(newTarefa(9476, "Poder registrar informação de deferimento", []))
+sprint_101.tarefas.push(newTarefa(9474, "Ao inativar prontuário não contar como atendimento", []))
+sprint_101.tarefas.push(newTarefa(9473, "Imprimir assinatura digitalizada no prontuário", []))
+sprint_101.tarefas.push(newTarefa(9472, "Supervisor geral poder inativar prontuário de aluno", []))
+sprint_101.tarefas.push(newTarefa(9470, "Esta dando diferença nos relatórios de Fluxo de caixa", []))
+sprint_101.tarefas.push(newTarefa(9468, "Mostrar número de documento faturamento na baixa", []))
+sprint_101.tarefas.push(newTarefa(9452, "Poder renegociar orçamentos após ter baixado todas as parcelas ou mesmo sem ter baixado nenhuma", []))
+sprint_101.tarefas.push(newTarefa(9449, "Nas notas fiscais, alterar a nomenclatura de Regime de Tributação para Regime especial de Tributação nas informações complementares ", []))
+sprint_101.tarefas.push(newTarefa(9406, "Solicitar senha ao remarcar se for uma reconsulta e a mesma for remarcada para fora do período liberado", []))
+sprint_101.tarefas.push(newTarefa(9398, "Poder remarcar agendamentos com datas anteriores a hoje", []))
+sprint_101.tarefas.push(newTarefa(9390, "Possibilitar criar campanhas por convênio", []))
+sprint_101.tarefas.push(newTarefa(9380, "Problemas nos emails com agendamento recorrente", []))
+sprint_101.tarefas.push(newTarefa(1, "FAST", []))
+sprint_101.tarefas.push(newTarefa(9612, "Dificuldade em fazer entrada no estoque atráves de NF-e", []))
+sprint_101.tarefas.push(newTarefa(9620, "Alterar mensagem de integração com contify", []))
+
+
+
+const SPRINTS = [sprint_101];
 
 module.exports = {
 	getSprints: ()=>{
