@@ -511,7 +511,7 @@ sprint_100.tarefas.push(newTarefa(9346, "Assinar PDF do prontuário com certific
 const sprint_101 = {
        title: 'Sprint 101/102',
        sprint_number: "101",
-       meta: "Liberação da integracao com a Contify",
+       meta: "Liberação da integracao com a Contify, correção de problemas diversos e possibilitar criar campanhas por convênio.",
        data_atualizacao: "Tarefas ja atualizadas.",
        easter_egg: "/static/images/sprint101.webp",
        tarefas: []
