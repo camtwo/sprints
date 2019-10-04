@@ -13,5 +13,4 @@ router.get('/:sprint/redmine.txt', function(req, res, next) {
   	res.render('redmine', dadosSprint.dadosDaSprint(sprintNumber));
 });
 
-
 module.exports = router;

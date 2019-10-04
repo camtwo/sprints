@@ -559,9 +559,32 @@ sprint_101.tarefas.push(newTarefa(1, "FAST", []))
 sprint_101.tarefas.push(newTarefa(9612, "Dificuldade em fazer entrada no estoque atráves de NF-e", []))
 sprint_101.tarefas.push(newTarefa(9620, "Alterar mensagem de integração com contify", []))
 
+const sprint_103 = {
+       title: 'Sprint 103',
+       sprint_number: "103",
+       meta: "Emitir NF-e para estrangeiros e ajustado a geração de comissões quando tem valor de convênio.",
+       data_atualizacao: "Tarefas ja atualizadas.",
+       easter_egg: "/static/images/sprint103.webp",
+       tarefas: []
+}
+
+sprint_103.tarefas.push(newTarefa(9651, "Ajustar geração de comissão tipo repasse quando tem valor convênio e não tem paciente", []))
+sprint_103.tarefas.push(newTarefa(9636, "Possibilitar escolher se o orçamento odontológico irá restringir as quantidades de agendamento dos procedimentos", []))
+sprint_103.tarefas.push(newTarefa(9631, "Disponibilizar somente os convênios ativos na exportação e importação de procedimentos", []))
+sprint_103.tarefas.push(newTarefa(9614, "Poder retirar assinatura do profissional na impressão dos atestados.", []))
+sprint_103.tarefas.push(newTarefa(9604, "Melhorar lógica de filtros da campanha", []))
+sprint_103.tarefas.push(newTarefa(9601, "Criar nova integração para emissão de notas fiscais - Prefeitura de Porto Alegre", []))
+sprint_103.tarefas.push(newTarefa(9590, "Inserir indicador de que o tipo de convênio é particular", []))
+sprint_103.tarefas.push(newTarefa(9585, "Possibilitar selecionar base de cálculo para geração de repasse adicional", []))
+sprint_103.tarefas.push(newTarefa(9372, "Não mostrar a tab de Meu plano quando existir whitelabel preenchido e diferente de 'cnn'", []))
+sprint_103.tarefas.push(newTarefa(9257, "Criar forma para selecionar data de conciliação nas Pendências de cartões/cheques ao conciliar parcela", []))
+sprint_103.tarefas.push(newTarefa(9227, "Mostrar o motivo de reforço/sangria ", []))
+sprint_103.tarefas.push(newTarefa(9180, "Mostrar na lista de pacientes quando o paciente é inativo", []))
+sprint_103.tarefas.push(newTarefa(9084, "Melhorar importação de procedimentos", []))
+sprint_103.tarefas.push(newTarefa(5219, "Emitir NF-e com documento de estrangeiro", []))
 
 
-const SPRINTS = [sprint_101];
+const SPRINTS = [sprint_103];
 
 module.exports = {
 	getSprints: ()=>{
