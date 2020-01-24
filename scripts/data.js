@@ -584,7 +584,42 @@ sprint_103.tarefas.push(newTarefa(9084, "Melhorar importação de procedimentos"
 sprint_103.tarefas.push(newTarefa(5219, "Emitir NF-e com documento de estrangeiro", []))
 
 
-const SPRINTS = [sprint_103];
+const sprint_109 = {
+       title: 'Resumo sprints',
+       sprint_number: "109",
+       meta: "Resumo das sprints até a 109, marcando os pontos principais.",
+       data_atualizacao: "Tarefas ja atualizadas.",
+       easter_egg: "/static/images/sprint109.gif",
+       tarefas: []
+}
+
+sprint_109.tarefas.push(newTarefa(1, "Remover relógio do painel de chamadas", []));
+sprint_109.tarefas.push(newTarefa(2, "Possibilidade de editar mais campos no movimento já criado. Dados do cheque e número do documento.", []));
+sprint_109.tarefas.push(newTarefa(3, "Melhorado a visualização de solicitações de exame, formato igual a prescrição", []));
+sprint_109.tarefas.push(newTarefa(4, "Melhoria na grid das pendências, data vencimento e número do documento", []));
+sprint_109.tarefas.push(newTarefa(5, "Tipos de consulta que não validam escala", []));
+sprint_109.tarefas.push(newTarefa(6, "Paginação na tela de movimentos", []));
+sprint_109.tarefas.push(newTarefa(7, "Novo Formato do envio de agenda para profissionais", []));
+sprint_109.tarefas.push(newTarefa(8, "Notas de serviço para estrangeiros cidade de RJ", []));
+sprint_109.tarefas.push(newTarefa(9, "Conciliação de cartões via arquivo csv", []));
+sprint_109.tarefas.push(newTarefa(10, "Videos no painel de chamada", []));
+sprint_109.tarefas.push(newTarefa(11, "Anamnese/Questionário respondido pelo paciente", []));
+sprint_109.tarefas.push(newTarefa(12, "Orçamentos criados sendo enviados ao RD", []));
+sprint_109.tarefas.push(newTarefa(13, "Relatório de orçamentos ainda não finalizados", []));
+sprint_109.tarefas.push(newTarefa(14, "Possibilitar imprimir a agenda na hora de salvar", []));
+sprint_109.tarefas.push(newTarefa(15, "Possibilidade de saber se o procedimento orçado foi ou não realizado", []));
+sprint_109.tarefas.push(newTarefa(16, "Nota fiscal serviço para Montes Claros", []));
+sprint_109.tarefas.push(newTarefa(17, "Adicionar como beneficiário todos os relacionados ao responsável financeiro", []));
+sprint_109.tarefas.push(newTarefa(18, "Boleto Safra 240", []));
+sprint_109.tarefas.push(newTarefa(19, "Sincronizar campos personalizados pipedrive", []));
+sprint_109.tarefas.push(newTarefa(20, "Pastas privadas no imagens e documentos", []));
+sprint_109.tarefas.push(newTarefa(21, "Permitir impressão direta da guia de consulta ou SADT após salvar", []));
+sprint_109.tarefas.push(newTarefa(22, "Prontuário conferido para clínica escola", []));
+sprint_109.tarefas.push(newTarefa(23, "Novo layout para perguntas anamnese", []));
+sprint_109.tarefas.push(newTarefa(24, "Filtro de convênio na consulta de disponibilidade", []));
+sprint_109.tarefas.push(newTarefa(25, "Campo de e-mail do cadastro pela agenda", []));
+
+const SPRINTS = [sprint_109];
 
 module.exports = {
 	getSprints: ()=>{
