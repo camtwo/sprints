@@ -619,7 +619,36 @@ sprint_109.tarefas.push(newTarefa(23, "Novo layout para perguntas anamnese", [])
 sprint_109.tarefas.push(newTarefa(24, "Filtro de convênio na consulta de disponibilidade", []));
 sprint_109.tarefas.push(newTarefa(25, "Campo de e-mail do cadastro pela agenda", []));
 
-const SPRINTS = [sprint_109];
+
+const sprint_110 = {
+       title: 'Sprint 110',
+       sprint_number: "110",
+       meta: "Apresentação sprint 110",
+       data_atualizacao: "Tarefas parcialmente atualizadas.",
+       easter_egg: "/static/images/sprint110.webp",
+       tarefas: []
+}
+sprint_110.tarefas.push(newTarefa(10191, "Inserir informações bancárias no cliente/fornecedor", []));
+sprint_110.tarefas.push(newTarefa(10213, "Criar estrutura de débito automático para tela conta", []));
+sprint_110.tarefas.push(newTarefa(10188, "Criar classes para salvar as informações dos faturamentos", []));
+sprint_110.tarefas.push(newTarefa(10190, "Criar tela para gerar arquivos de debito automático", []));
+sprint_110.tarefas.push(newTarefa(10206, "Mostrar retorno do débito automático no detalhe do faturamento", []));
+sprint_110.tarefas.push(newTarefa(10205, "Criar tela para upload do arquivo de retorno do débito", []));
+sprint_110.tarefas.push(newTarefa(10187, "Criar estrutura para geração dos arquivos de debito automático", []));
+sprint_110.tarefas.push(newTarefa(10269, "implementar regras do débito automático", []));
+sprint_110.tarefas.push(newTarefa(9720, "[Tarefa Pai] Criar rotina para registrar débito automatico", []));
+
+sprint_110.tarefas.push(newTarefa(10119, "Integração com prefeitura de Aracajú", []));
+sprint_110.tarefas.push(newTarefa(9041, "Integração de prefeitura para emissão de notas fiscais - Uberlândia MG", []));
+sprint_110.tarefas.push(newTarefa(10147, "Possibilitar imprimir as agendas do paciente", []));
+sprint_110.tarefas.push(newTarefa(10148, "Remover redirecionamento do whitelabel volty", []));
+sprint_110.tarefas.push(newTarefa(10163, "Adicionar campo de observações no cadastro do Cliente /Fornecedor", []));
+sprint_110.tarefas.push(newTarefa(10195, "Prontuários pendentes de análise e indeferidos quando inativos", []));
+sprint_110.tarefas.push(newTarefa(10165, "Inserir filtro por paciente na área de atendimentos agendados - painel de chamadas", []));
+sprint_110.tarefas.push(newTarefa(10194, "Na página de Pacientes: o filtro de pacientes por profissional não está funcionando", []));
+
+
+const SPRINTS = [sprint_110];
 
 module.exports = {
 	getSprints: ()=>{
