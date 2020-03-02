@@ -648,7 +648,32 @@ sprint_110.tarefas.push(newTarefa(10165, "Inserir filtro por paciente na área d
 sprint_110.tarefas.push(newTarefa(10194, "Na página de Pacientes: o filtro de pacientes por profissional não está funcionando", []));
 
 
-const SPRINTS = [sprint_110];
+const sprint_112 = {
+       title: 'Sprint 112',
+       sprint_number: "112",
+       meta: "Apresentação sprint 110",
+       data_atualizacao: "Tarefas parcialmente atualizadas.",
+       easter_egg: "/static/images/sprint112.webp",
+       tarefas: []
+};
+
+sprint_112.tarefas.push(newTarefa(10164, "Relatório de detalhamento de venda.", []));
+sprint_112.tarefas.push(newTarefa( 9979, "Relatório sintético Plano de benefícios.", []));
+sprint_112.tarefas.push(newTarefa(10271, "Alterações na visualização dos prontuários pendentes de conferência.", []));
+sprint_112.tarefas.push(newTarefa(10127, "Gerar uma guia de solicitação de procedimentos a partir de uma solicitação de exames.", []));
+sprint_112.tarefas.push(newTarefa(10161, "Adicionar mais 2 campos de assinatura no bloco de procedimento seriado - SADT.", []));
+sprint_112.tarefas.push(newTarefa(10234, "Possibilitar limitar a quantidade de Guias dentro de um lote TISS.", []));
+sprint_112.tarefas.push(newTarefa(10261, "Possibilitar configuração de bloqueio de choque de horário de agenda por profissional.", []));
+sprint_112.tarefas.push(newTarefa( 7332, "Criar impressão de etiquetas/pulseira internação.", []));
+
+// bugs urgnte importantes
+
+sprint_112.tarefas.push(newTarefa(0, "Extras: tarefas de bugs com melhorias importantes", [
+	newTarefa(10319, "Analisar consumo excessivo de memória e processamento na consulta geral de valores.", [], false, false, true),
+	newTarefa(10313, "Problemas com o editor de texto formatado.", [], false, false, true)
+	], true, true, false));
+
+const SPRINTS = [sprint_112];
 
 module.exports = {
 	getSprints: ()=>{
