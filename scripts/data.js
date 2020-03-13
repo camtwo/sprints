@@ -673,7 +673,40 @@ sprint_112.tarefas.push(newTarefa(0, "Extras: tarefas de bugs com melhorias impo
 	newTarefa(10313, "Problemas com o editor de texto formatado.", [], false, false, true)
 	], true, true, false));
 
-const SPRINTS = [sprint_112];
+
+
+const sprint_113 = {
+       title: 'Sprint 113',
+       sprint_number: "113",
+       meta: "Apresentação sprint 113",
+       data_atualizacao: "Tarefas parcialmente atualizadas.",
+       easter_egg: "/static/images/sprint113.webp",
+       tarefas: []
+};
+
+sprint_113.tarefas.push(newTarefa(3668, "[Tarefa pai] Criar configuração de provedor de email para a clinica", [
+	newTarefa(9327, "Possibilitar configuração de dados de SMTP da clínica", [],false, false, true)
+]));
+
+sprint_113.tarefas.push(newTarefa(10192, "[Tarefa pai] Melhorias Prontuário pediatria", [
+	newTarefa(10330, "Criar nova seção para dados de pediatria", [],false, false, true),
+	newTarefa(10332, "Inserir novos gráficos na seção de gráficos de pediatria", [],false, false, true)
+]));
+sprint_113.tarefas.push(newTarefa(10308, "[Tarefa pai] Continuidade do TISS odontologia", [
+	newTarefa(10323, "Alterar lógica de funcionamento dos lotes TISS", [],false, false, true),
+	newTarefa(10324, "Criar tela para guia odontológica", [],false, false, true)
+]));
+
+sprint_113.tarefas.push(newTarefa(10316, "Tirar o preenchimento automático do vendedor no plano beneficio", []));
+sprint_113.tarefas.push(newTarefa(7311, "Ao tirar um relatório de Relação de pacientes, o dado data de nascimento não é informado", []));
+sprint_113.tarefas.push(newTarefa(10354, "Agendas repetidas com tipo de consulta que não fatura aparece o faturar.", []));
+sprint_113.tarefas.push(newTarefa(10360, "Bug na visualização do compromisso", []));
+sprint_113.tarefas.push(newTarefa(10125, "Imprimir guia de solicitação de procedimento em PDF", []));
+sprint_113.tarefas.push(newTarefa(10205, "Criar tela para upload do arquivo de retorno do débito", []));
+sprint_113.tarefas.push(newTarefa(10119, "Integração com prefeitura de Aracajú", []));
+
+
+const SPRINTS = [sprint_113];
 
 module.exports = {
 	getSprints: ()=>{
