@@ -705,8 +705,49 @@ sprint_113.tarefas.push(newTarefa(10125, "Imprimir guia de solicitação de proc
 sprint_113.tarefas.push(newTarefa(10205, "Criar tela para upload do arquivo de retorno do débito", []));
 sprint_113.tarefas.push(newTarefa(10119, "Integração com prefeitura de Aracajú", []));
 
+const sprint_114 = {
+       title: 'Sprint 114',
+       sprint_number: "114",
+       meta: "Apresentação sprint 114",
+       data_atualizacao: "Tarefas parcialmente atualizadas.",
+       easter_egg: "/static/images/sprint114.webp",
+       tarefas: []
+};
 
-const SPRINTS = [sprint_113];
+sprint_114.tarefas.push(newTarefa(10473, "[Tarefa pai] Job para sincronizar arquivos e tempo de teleconsulta", [
+	newTarefa(10475, "1 - Job para atualizar dados da teleconsulta", [],false, false, true),
+	newTarefa(10476, "2 - Job para criar composição da gravaçao ref teleconsulta", [],false, false, true),
+	newTarefa(10477, "3 - Job para download das compositions completas", [],false, false, true),
+	newTarefa(10479, "Listar arquivos da teleconsulta no prontuário", [],false, false, true),
+]));
+sprint_114.tarefas.push(newTarefa(10486, "[Tarefa pai] Melhorias para assinatura digital de documentos do prontuário", [
+	newTarefa(10468, "Ajustar CNN para assinar digitalmente as prescrições com a memed", [],false, false, true),
+	newTarefa(10487, "Assinar digitalmente atestados, prescrições, laudos e solicitações de exame", [],false, false, true)
+]));
+sprint_114.tarefas.push(newTarefa(10486, "[Tarefa pai] Integração com twilio para teleconsulta com paciente", [
+	newTarefa(10470, "Permitir ativar/desativar módulo de telemedicina", [],false, false, true),
+	newTarefa(10471, "Possibilitar fixar o tamanho do vídeo para encaixar na tela de teleconsulta", [],false, false, true),
+	newTarefa(10472, "Unificar botoes de ativar/desativar som e vídeo", [],false, false, true),
+	newTarefa(10475, "1 - Job para atualizar dados da teleconsulta", [],false, false, true),
+	newTarefa(10476, "2 - Job para criar composição da gravaçao ref teleconsulta", [],false, false, true),
+	newTarefa(10477, "3 - Job para download das compositions completas", [],false, false, true),
+	newTarefa(10479, "Listar arquivos da teleconsulta no prontuário", [],false, false, true),
+	newTarefa(10481, "Adicionar validação do token do paciente para liberar somente quando o prontuário existir e estiver em aberto", [],false, false, true),
+	newTarefa(10489, "Criar termo de consentimento para o paciente aceitar antes de iniciar a consulta por vídeo com o médico", [],false, false, true)
+]));
+
+sprint_114.tarefas.push(newTarefa(10377, "Criar coluna no orçamento para armazenar a pessoa prospectora do orçamento", []));
+sprint_114.tarefas.push(newTarefa(10408, "Informar que a agenda teve remarcações", []));
+sprint_114.tarefas.push(newTarefa(10422, "Aumentar tamanho do campo de observações do paciente para 1000 caracteres", []));
+sprint_114.tarefas.push(newTarefa(10424, "Possibilitar escolha se imprime ou não dados de contato do paciente na anamnese/questionário", []));
+sprint_114.tarefas.push(newTarefa(10432, "Melhorar carregamento e feedback visual da agenda", []));
+sprint_114.tarefas.push(newTarefa(10414, "Possibilitar marcar pendência de cartão como cancelada", []));
+sprint_114.tarefas.push(newTarefa(10421, "Possibilitar envio de documento do orçamento por email", []));
+sprint_114.tarefas.push(newTarefa(10445, "Formato de liberaçao do módulo de plano de benefícios", []));
+sprint_114.tarefas.push(newTarefa(10447, "Permitir cadastro de vários serviços com códigos e tributações diferentes", []));
+
+
+const SPRINTS = [sprint_114];
 
 module.exports = {
 	getSprints: ()=>{
