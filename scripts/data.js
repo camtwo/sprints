@@ -747,7 +747,32 @@ sprint_114.tarefas.push(newTarefa(10445, "Formato de liberaçao do módulo de pl
 sprint_114.tarefas.push(newTarefa(10447, "Permitir cadastro de vários serviços com códigos e tributações diferentes", []));
 
 
-const SPRINTS = [sprint_114];
+const sprint_115 = {
+       title: 'Sprint 115',
+       sprint_number: "115",
+       meta: "Apresentação sprint 115",
+       data_atualizacao: "Tarefas parcialmente atualizadas.",
+       easter_egg: "/static/images/sprint115.gif",
+       tarefas: []
+};
+
+sprint_115.tarefas.push(newTarefa(10321, "[Tarefa pai] Implementar nova API de whatsapp", [
+	newTarefa(10325, "Refatorar app que envia whatsapp", [],false, false, true),
+	newTarefa(10327, "Refatorar chamadas de métodos do CNN para nova API de whatsapp",[],false, false, true)
+]));
+
+sprint_115.tarefas.push(newTarefa(10441, "Trocar a validação do certificado do sistema", []));
+sprint_115.tarefas.push(newTarefa(10518, "Incorporar códigos da parte de materiais do TISS", []));
+sprint_115.tarefas.push(newTarefa(10521, "Remover coluna de observação, url e url_thumb", []));
+sprint_115.tarefas.push(newTarefa(10520, "Mostrar seção de teleconsulta no prontuário mesmo se não existir arquivos", []));
+sprint_115.tarefas.push(newTarefa(10452, "Integração com twilio para teleconsulta com paciente", []));
+sprint_115.tarefas.push(newTarefa(10551, "Rever lógica de remoção de teleconsultas da consulta do job", []));
+sprint_115.tarefas.push(newTarefa(10516, "Endpoints para retorno dos dados de cobrança referentes à teleconsulta", []));
+sprint_115.tarefas.push(newTarefa(10474, "Possibilitar que o profissional encerre a teleconsulta de todos os participantes", []));
+sprint_115.tarefas.push(newTarefa(10515, "Possibilitar configuração para gravação ou não da teleconsulta", []));
+sprint_115.tarefas.push(newTarefa(10514, "Refatorar tela de vídeo da teleconsulta para usar o template em react", []));
+
+const SPRINTS = [sprint_115];
 
 module.exports = {
 	getSprints: ()=>{
