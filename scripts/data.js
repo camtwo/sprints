@@ -772,7 +772,38 @@ sprint_115.tarefas.push(newTarefa(10474, "Possibilitar que o profissional encerr
 sprint_115.tarefas.push(newTarefa(10515, "Possibilitar configuração para gravação ou não da teleconsulta", []));
 sprint_115.tarefas.push(newTarefa(10514, "Refatorar tela de vídeo da teleconsulta para usar o template em react", []));
 
-const SPRINTS = [sprint_115];
+
+const sprint_116 = {
+       title: 'Sprint 116',
+       sprint_number: "116",
+       meta: "Apresentação sprint 116",
+       data_atualizacao: "Algumas tarefas já foram atualizadas.",
+       easter_egg: "/static/images/sprint116.webp",
+       tarefas: []
+};
+
+sprint_116.tarefas.push(newTarefa(10016, "[Tarefa Pai] Comissão por execução de orçamentos", [
+	newTarefa(10374, "Criar tela de repasses para agenda", [],false, false, true),
+	newTarefa(10375, "Nova rotina para tipo de cálculo de repasse no orçamento",[],false, false, true),
+	newTarefa(10376, "Modificar tela de pagamento de comissão",[],false, false, true),
+	newTarefa(10579, "Lista de repasses/comissões pendentes",[],false, false, true),
+	newTarefa(10581, "Transferir obrigatoriedade do repasse para o salvar orçamento aprovado",[],false, false, true)
+]));
+
+sprint_116.tarefas.push(newTarefa(10554, "Melhorias no fluxo de caixa", []));
+sprint_116.tarefas.push(newTarefa(10329, "Editar vendedor do plano de beneficio", []));
+sprint_116.tarefas.push(newTarefa(10434, "Inserir filtro por dia da semana e por tipo de consulta nas escalas", []));
+sprint_116.tarefas.push(newTarefa(10553, "Relatório de Respostas Informações adicionais por data", []));
+sprint_116.tarefas.push(newTarefa(10578, "Totalizar relatórios do plano de benefício", []));
+
+sprint_116.tarefas.push(newTarefa(10571, "Na seçao de teleconsulta dentro do prontuario, mostrar tabela com as rooms com data/hora inicial e final (REJEITADA)", [],true, true, true));
+sprint_116.tarefas.push(newTarefa(10623, "Modificar apresentação da linha do tempo dos tempos de teleconsulta do prontuário", []));
+sprint_116.tarefas.push(newTarefa(10568, "Aumentar tamanho tela video selecionado", []));
+sprint_116.tarefas.push(newTarefa(10566, "Atualizar termo de consentimento teleconsulta", []));
+
+sprint_116.tarefas.push(newTarefa(10645, "Ajustar menus de relatórios para o padrão de configurações", []));
+
+const SPRINTS = [sprint_116];
 
 module.exports = {
 	getSprints: ()=>{
