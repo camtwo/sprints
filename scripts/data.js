@@ -803,7 +803,47 @@ sprint_116.tarefas.push(newTarefa(10566, "Atualizar termo de consentimento telec
 
 sprint_116.tarefas.push(newTarefa(10645, "Ajustar menus de relatórios para o padrão de configurações", []));
 
-const SPRINTS = [sprint_116];
+
+
+
+const sprint_117 = {
+       title: 'Sprint 117',
+       sprint_number: "117",
+       meta: "Apresentação sprint 117, planos/convênio, API cnn e planos de benefício",
+       data_atualizacao: "Algumas tarefas já foram atualizadas.",
+       easter_egg: "/static/images/sprint117.webp",
+       tarefas: []
+};
+
+sprint_117.tarefas.push(newTarefa(10634, "[Tarefa pai] Possibilitar criação de agenda via API", [
+	newTarefa(10657, "Expor consulta de valores de procedimento via API", [],false, false, true),
+	newTarefa(10636, "Expor lista de Tipos de consulta via API", [],false, false, true),
+	newTarefa(10637, "Expor lista de Local agenda via API", [],false, false, true),
+	newTarefa(10638, "Expor lista de executores de agenda via API", [],false, false, true),
+	newTarefa(10654, "Expor lista de procedimentos VIA API", [],false, false, true),
+	newTarefa(10655, "Expor lista de pacientes via API", [],false, false, true),
+	newTarefa(10656, "Expor lista de tipos de convenio via API", [],false, false, true),
+	newTarefa(10663, "Expor lista de especialidades via API", [],false, false, true)
+]));
+sprint_117.tarefas.push(newTarefa(10593, "[Tarefa Pai] Criar planos para os convênios", [
+	newTarefa(10594, "0 - Criar configuração de convênio padrão agenda externa", [],false, false, true),
+	newTarefa(10598, "1 - Nova estrutura para Convênio", [],false, false, true),
+	newTarefa(10599, "2 - Refatorar cadastro de Tipo de convênio", [],false, false, true),
+	newTarefa(10595, "2 - Refatorar criação de nova Empresa_tenant convênio padrão", [],false, false, true),
+	newTarefa(10600, "Permitir cadastrar o convênio do paciente na hora da agenda", [],false, false, true)
+]));
+
+sprint_117.tarefas.push(newTarefa(10642, "[Tarefa Pai] Criar estrutura para venda de planos para empresas conveniadas", [
+	newTarefa(10652, "Criar rotina para criar contrato plano benefício", [],false, false, true),
+	newTarefa(10653, "Adicionar contrato na tela de venda de plano de benefício", [],false, false, true)
+]));
+
+sprint_117.tarefas.push(newTarefa(10615, "Atualizar o valor convênio do procedimento ao salvar guia tiss", []));
+sprint_117.tarefas.push(newTarefa(10684, "Possibilitar escolher o convênio dos pacientes na hora da importação", []));
+sprint_117.tarefas.push(newTarefa(10658, "Adicionar local de atendimento no MultiplasAgenda", []));		
+		
+
+const SPRINTS = [sprint_117];
 
 module.exports = {
 	getSprints: ()=>{
