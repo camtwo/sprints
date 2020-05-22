@@ -840,8 +840,13 @@ sprint_117.tarefas.push(newTarefa(10642, "[Tarefa Pai] Criar estrutura para vend
 
 sprint_117.tarefas.push(newTarefa(10615, "Atualizar o valor convênio do procedimento ao salvar guia tiss", []));
 sprint_117.tarefas.push(newTarefa(10684, "Possibilitar escolher o convênio dos pacientes na hora da importação", []));
-sprint_117.tarefas.push(newTarefa(10658, "Adicionar local de atendimento no MultiplasAgenda", []));		
-		
+sprint_117.tarefas.push(newTarefa(10658, "Adicionar local de atendimento no MultiplasAgenda", []));	
+
+sprint_117.tarefas.push(newTarefa(10572, "BUG Quando coloca muita informação na observação do procedimento fica quebrada no agendamento", []));	
+sprint_117.tarefas.push(newTarefa(10677, "BUG Melhorar a tela de inicio do teleconsulta", []));
+sprint_117.tarefas.push(newTarefa(10689, "BUG Bug ao carregar a tela de horários do profissional", []));
+sprint_117.tarefas.push(newTarefa(10690, "BUG Não está excluindo solicitação de procedimento", []));
+sprint_117.tarefas.push(newTarefa(10695, "BUG Não esta carregando o editor para a anamnese no pré-atendimento", []));
 
 const SPRINTS = [sprint_117];
 
