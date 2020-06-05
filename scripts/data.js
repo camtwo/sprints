@@ -848,7 +848,48 @@ sprint_117.tarefas.push(newTarefa(10689, "BUG Bug ao carregar a tela de horário
 sprint_117.tarefas.push(newTarefa(10690, "BUG Não está excluindo solicitação de procedimento", []));
 sprint_117.tarefas.push(newTarefa(10695, "BUG Não esta carregando o editor para a anamnese no pré-atendimento", []));
 
-const SPRINTS = [sprint_117];
+
+const sprint_118 = {
+       title: 'Sprint 118',
+       sprint_number: "118",
+       meta: "Apresentação sprint 118",
+       data_atualizacao: "Algumas tarefas já foram atualizadas.",
+       easter_egg: "/static/images/sprint118.webp",
+       tarefas: []
+};
+
+sprint_118.tarefas.push(newTarefa(10307, "Relatório de planos de benefício por vencimento", []));
+sprint_118.tarefas.push(newTarefa(10727, "Criar cadastro de motivos de cancelamento de plano de benefício", []));
+sprint_118.tarefas.push(newTarefa(10728, "Possibilitar associar um motivo de cancelamento ao cancelar plano de benefício", []));
+sprint_118.tarefas.push(newTarefa(10729, "Possibilitar inserir motivo de cancelamento ao cancelar plano de benefício de empresa", []));
+sprint_118.tarefas.push(newTarefa(10730, "Relatório de cancelamentos de plano de benefício - sintético e analítico", []));
+sprint_118.tarefas.push(newTarefa(10731, "Relatório de cancelamentos de plano de benefício - planos de empresa - sintético e analítico", []));
+
+sprint_118.tarefas.push(newTarefa(10752, "Bug ao finalizar evolução sobre prontuário com datas antigas", []));
+sprint_118.tarefas.push(newTarefa(10412, "Mostrar os detalhes do faturamento na tela de extrato financeiro do paciente", []));
+sprint_118.tarefas.push(newTarefa(10413, "Quando tipo de pagamento não for cartão ou cheque, inserir data da conciliação igual à data de pagamento", []));
+sprint_118.tarefas.push(newTarefa(10648, "Adicionar tag para modelo de Etiquetas", []));
+sprint_118.tarefas.push(newTarefa(10664, "Mostar o indicado por na tela de prontuário", []));
+sprint_118.tarefas.push(newTarefa(10665, "Mostar o indicado por na tela de Perfil do paciente", []));
+sprint_118.tarefas.push(newTarefa(10646, "Poder lançar as taxas de salas para o TISS", []));
+
+sprint_118.tarefas.push(newTarefa(10667, "Permitir cadastrar paciente via API", []));
+sprint_118.tarefas.push(newTarefa(10783, "Criar endpoints para retornar registros por ID", []));
+sprint_118.tarefas.push(newTarefa(10708, "Ajustar código da agenda para trabalhar apenas com uma promoção (não uma lista)", []));
+sprint_118.tarefas.push(newTarefa(10712, "Retornar telefones e email do paciente na lista de agendamentos do profissional", []));
+
+sprint_118.tarefas.push(newTarefa(10650, "Possibilitar esconder os menus do financeiro", []));
+sprint_118.tarefas.push(newTarefa(10711, "Ajustar o menu financeiro para ser igual configuração e relatórios", []));
+			
+sprint_118.tarefas.push(newTarefa(10766, "Problema agendamento, erro convênio", []));
+sprint_118.tarefas.push(newTarefa(10759, "Tela azul ao gerar recibo", []));
+sprint_118.tarefas.push(newTarefa(10758, "Tela azul ao ir pra tela de atendimentos do dia do profissional, quando a clinica bloqueia atendimento sem pagamento", []));
+sprint_118.tarefas.push(newTarefa(10788, "Ao clicar nos modelos de planos de documentos dos planos de benefícios, não carrega nada e trava.", []));
+sprint_118.tarefas.push(newTarefa(10760, "Erro ao selecionar primeiro o convenio e depois o paciente na agenda", []));
+sprint_118.tarefas.push(newTarefa(10774, "Ao gerar recibo, o mesmo vai para a tela do A Pagar e Receber", []));
+sprint_118.tarefas.push(newTarefa(10761, "Convênio da agenda selecionar o primeiro", []));
+
+const SPRINTS = [sprint_118];
 
 module.exports = {
 	getSprints: ()=>{
